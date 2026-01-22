@@ -1,0 +1,68 @@
+/* TOC Styles */
+.toc-nav {
+    padding: 1rem 0;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.toc-nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toc-nav li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.toc-nav li::before {
+    content: '#';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary-color);
+    opacity: 0.5;
+    font-size: 0.9em;
+}
+
+.toc-nav li.header-h1 {
+    padding-left: 0;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.toc-nav li.header-h1::before {
+    display: none;
+}
+
+.toc-nav li.header-h2 {
+    padding-left: 1rem;
+}
+
+.toc-nav li.header-h3 {
+    padding-left: 2rem;
+    font-size: 0.9rem;
+}
+
+.toc-nav li.header-h4 {
+    padding-left: 3rem;
+    font-size: 0.85rem;
+}
+
+.toc-nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: var(--transition);
+    display: block;
+    padding: 0.25rem 0;
+}
+
+.toc-nav a:hover {
+    color: var(--primary-color);
+}
+
+.toc-nav a.active {
+    color: var(--primary-color);
+    font-weight: 500;
+}

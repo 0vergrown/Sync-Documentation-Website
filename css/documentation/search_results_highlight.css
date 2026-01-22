@@ -1,0 +1,9 @@
+/* Search Results Highlight */
+.file-item.highlighted {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.file-item.highlighted:hover {
+    background-color: var(--primary-dark);
+}

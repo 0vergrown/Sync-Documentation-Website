@@ -1,0 +1,35 @@
+{
+  "getting_started": [
+    "introduction.md",
+    "installation.md",
+    "quick_start.md"
+  ],
+  "power_types": [
+    "introduction.md",
+    "custom_power.md",
+    "entity_power.md",
+    "world_power.md"
+  ],
+  "conditions": [
+    "introduction.md",
+    "entity_conditions.md",
+    "world_conditions.md",
+    "custom_conditions.md"
+  ],
+  "actions": [
+    "introduction.md",
+    "entity_actions.md",
+    "world_actions.md",
+    "custom_actions.md"
+  ],
+  "examples": [
+    "basic_power.md",
+    "advanced_power.md",
+    "combining_features.md"
+  ],
+  "api_reference": [
+    "overview.md",
+    "json_syntax.md",
+    "type_reference.md"
+  ]
+}

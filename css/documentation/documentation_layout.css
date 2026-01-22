@@ -1,0 +1,90 @@
+/* Documentation Layout */
+.main-container {
+    display: flex;
+    min-height: calc(100vh - 70px);
+    position: relative;
+}
+
+.left-sidebar,
+.right-sidebar {
+    width: 280px;
+    background-color: var(--card-bg);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+    z-index: 90;
+}
+
+.right-sidebar {
+    border-right: none;
+    border-left: 1px solid var(--border-color);
+}
+
+.markdown-viewer {
+    flex: 1;
+    min-width: 0;
+    padding: 2rem;
+    background-color: var(--bg-color);
+    overflow-y: auto;
+}
+
+/* Responsive Design for Documentation */
+@media (max-width: 1024px) {
+    .left-sidebar,
+    .right-sidebar {
+        position: fixed;
+        top: 70px;
+        bottom: 0;
+        width: 300px;
+        transform: translateX(-100%);
+        box-shadow: var(--shadow);
+    }
+
+    .left-sidebar.active {
+        transform: translateX(0);
+    }
+
+    .right-sidebar {
+        left: auto;
+        right: 0;
+        transform: translateX(100%);
+    }
+
+    .right-sidebar.active {
+        transform: translateX(0);
+    }
+
+    .markdown-viewer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .markdown-viewer {
+        padding: 1.5rem;
+    }
+
+    .markdown-viewer h1 {
+        font-size: 2rem;
+    }
+
+    .markdown-viewer h2 {
+        font-size: 1.75rem;
+    }
+
+    .markdown-viewer h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-sidebar,
+    .right-sidebar {
+        width: 100%;
+    }
+
+    .markdown-viewer {
+        padding: 1rem;
+    }
+}

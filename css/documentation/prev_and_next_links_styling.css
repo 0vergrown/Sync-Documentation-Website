@@ -1,0 +1,19 @@
+/* Prev/Next Links Styling */
+.prev-next-links .label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+}
+
+.prev-next-links .title {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* Responsive Design for Documentation */
+@media (max-width: 768px) {
+    .prev-next-links {
+        flex-direction: column;
+    }
+}

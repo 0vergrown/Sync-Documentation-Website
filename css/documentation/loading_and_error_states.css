@@ -1,0 +1,25 @@
+/* Loading and Error States */
+.loading, .error {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-light);
+}
+
+.loading i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.loading p {
+    font-size: 1.2rem;
+}
+
+.error h2 {
+    color: #dc3545;
+    margin-bottom: 1rem;
+}
+
+.error p {
+    margin-bottom: 1.5rem;
+}

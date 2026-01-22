@@ -1,0 +1,19 @@
+/* Sidebar Meta */
+.sidebar-meta {
+    padding: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-light);
+}
+
+.meta-item i {
+    width: 16px;
+    color: var(--primary-color);
+}

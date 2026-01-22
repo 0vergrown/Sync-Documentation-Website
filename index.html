@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sync Documentation</title>
+    <link rel="stylesheet" href="css/template/base.css">
+    <link rel="stylesheet" href="css/template/navigation_bar.css">
+    <link rel="stylesheet" href="css/documentation/content_footer.css">
+    <link rel="stylesheet" href="css/documentation/content_header.css">
+    <link rel="stylesheet" href="css/documentation/documentation_layout.css">
+    <link rel="stylesheet" href="css/documentation/header_anchor_styles.css">
+    <link rel="stylesheet" href="css/documentation/loading_and_error_states.css">
+    <link rel="stylesheet" href="css/documentation/markdown_content_styles.css">
+    <link rel="stylesheet" href="css/documentation/prev_and_next_links_styling.css">
+    <link rel="stylesheet" href="css/documentation/quick_links_in_welcome_message.css">
+    <link rel="stylesheet" href="css/documentation/search_results_highlight.css">
+    <link rel="stylesheet" href="css/documentation/sidebar_meta.css">
+    <link rel="stylesheet" href="css/documentation/sidebar_styles.css">
+    <link rel="stylesheet" href="css/documentation/sidebar_toggle_for_mobile.css">
+    <link rel="stylesheet" href="css/documentation/syntax_highlighting.css">
+    <link rel="stylesheet" href="css/documentation/table_of_content_styles.css">
+    <link rel="stylesheet" href="css/documentation/table_wrapper.css">
+    <link rel="stylesheet" href="css/documentation/welcome_message.css">
+    <link rel="stylesheet" href="css/template/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-sync-alt"></i>
+                    <span class="logo-text">Sync</span>
+                    <img src="assets/image/navigation_bar/transparent_sync_logo.png" alt="Sync Logo" class="logo-image">
+                </a>
+                <ul class="nav-menu">
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            Downloads <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://modrinth.com/mod/sync" target="_blank" class="dropdown-item">
+                                <i class="fas fa-download"></i> Modrinth
+                            </a></li>
+                            <li><a href="https://www.curseforge.com/minecraft/mc-mods/overgrowns-sync" target="_blank" class="dropdown-item">
+                                <i class="fas fa-download"></i> CurseForge
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html" class="nav-link active">Documentation</a></li>
+                    <li><a href="https://github.com/0vergrown/Sync" target="_blank" class="nav-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Documentation Container -->
+    <main class="main-container">
+        <!-- Left Sidebar - Navigation -->
+        <aside class="left-sidebar sidebar">
+            <div class="sidebar-header">
+                <h3>Documentation</h3>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search documentation...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul id="sidebar-menu"></ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="https://github.com/0vergrown/Sync/issues" target="_blank" class="btn-report">
+                    <i class="fas fa-bug"></i> Report Issue
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <section class="markdown-viewer">
+            <div class="content-header">
+                <nav class="breadcrumb" id="breadcrumb"></nav>
+                <div class="content-actions">
+                    <button class="btn-action" id="editOnGitHub" title="Edit on GitHub">
+                        <i class="fab fa-github"></i> Edit
+                    </button>
+                    <button class="btn-action" id="printPage" title="Print">
+                        <i class="fas fa-print"></i>
+                    </button>
+                </div>
+            </div>
+            <article id="markdownContent">
+                <div class="welcome-message">
+                    <h1>Sync Documentation</h1>
+                    <p>Welcome to the Sync documentation. Select a topic from the sidebar to get started.</p>
+                    <div class="quick-links">
+                        <a href="#" class="quick-link" data-folder="getting_started" data-file="installation.md">
+                            <i class="fas fa-rocket"></i>
+                            <span>Getting Started</span>
+                        </a>
+                        <a href="#" class="quick-link" data-folder="power_types" data-file="index.md">
+                            <i class="fas fa-bolt"></i>
+                            <span>Power Types</span>
+                        </a>
+                        <a href="#" class="quick-link" data-folder="conditions" data-file="index.md">
+                            <i class="fas fa-sliders-h"></i>
+                            <span>Conditions</span>
+                        </a>
+                        <a href="#" class="quick-link" data-folder="actions" data-file="index.md">
+                            <i class="fas fa-play"></i>
+                            <span>Actions</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <div class="content-footer">
+                <div class="prev-next-links" id="prevNextLinks"></div>
+            </div>
+        </section>
+
+        <!-- Right Sidebar - Article Outline -->
+        <aside class="right-sidebar sidebar">
+            <div class="sidebar-header">
+                <h3>In this article</h3>
+            </div>
+            <nav class="toc-nav">
+                <ul id="headers-menu"></ul>
+            </nav>
+            <div class="sidebar-meta">
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Last updated: <span id="lastUpdated">Today</span></span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-tag"></i>
+                    <span>Version: <span id="docVersion">1.0.0</span></span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Mobile Toggle Sidebar -->
+        <button class="sidebar-toggle" id="leftSidebarToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <button class="sidebar-toggle right" id="rightSidebarToggle">
+            <i class="fas fa-list"></i>
+        </button>
+    </main>
+
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/documentation.js"></script>
+</body>
+</html>

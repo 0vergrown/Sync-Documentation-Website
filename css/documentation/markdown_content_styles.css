@@ -1,0 +1,170 @@
+/* Markdown Content Styles */
+.markdown-viewer article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.markdown-viewer h1 {
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.markdown-viewer h2 {
+    font-size: 2rem;
+    margin: 3rem 0 1rem;
+    padding-top: 1rem;
+}
+
+.markdown-viewer h3 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+}
+
+.markdown-viewer h4 {
+    font-size: 1.25rem;
+    margin: 1.5rem 0 0.75rem;
+}
+
+.markdown-viewer h5 {
+    font-size: 1.1rem;
+    margin: 1.25rem 0 0.5rem;
+}
+
+.markdown-viewer h6 {
+    font-size: 1rem;
+    margin: 1rem 0 0.5rem;
+    color: var(--text-light);
+}
+
+.markdown-viewer p {
+    margin: 1rem 0;
+    line-height: 1.7;
+}
+
+.markdown-viewer ul,
+.markdown-viewer ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.markdown-viewer li {
+    margin: 0.5rem 0;
+}
+
+.markdown-viewer blockquote {
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid var(--primary-color);
+    background-color: var(--card-bg);
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+}
+
+.markdown-viewer blockquote p {
+    margin: 0;
+}
+
+.markdown-viewer pre {
+    position: relative;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background-color: var(--code-bg);
+    border-radius: 8px;
+    overflow-x: auto;
+    border: 1px solid var(--border-color);
+}
+
+.markdown-viewer code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.markdown-viewer pre code {
+    display: block;
+    color: var(--text-color);
+}
+
+.markdown-viewer :not(pre) > code {
+    padding: 0.2rem 0.4rem;
+    background-color: var(--code-bg);
+    border-radius: 4px;
+    font-size: 0.85em;
+    color: var(--primary-color);
+}
+
+.markdown-viewer table {
+    width: 100%;
+    margin: 1.5rem 0;
+    border-collapse: collapse;
+    border: 1px solid var(--border-color);
+}
+
+.markdown-viewer th,
+.markdown-viewer td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.markdown-viewer th {
+    background-color: var(--card-bg);
+    font-weight: 600;
+}
+
+.markdown-viewer tr:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+.markdown-viewer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.markdown-viewer a:hover {
+    border-bottom-color: var(--primary-color);
+}
+
+/* Copy Button */
+.copy-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    padding: 0.5rem;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+pre:hover .copy-button {
+    opacity: 1;
+}
+
+.copy-button img {
+    width: 16px;
+    height: 16px;
+    filter: invert(var(--icon-invert, 0));
+}
+
+[data-theme="dark"] .copy-button img {
+    filter: invert(1);
+}
+
+.copy-button:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.copy-button:hover img {
+    filter: invert(1);
+}

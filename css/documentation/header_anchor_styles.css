@@ -1,0 +1,25 @@
+/* Header Anchor Styles */
+.header-anchor {
+    margin-left: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+h1:hover .header-anchor,
+h2:hover .header-anchor,
+h3:hover .header-anchor,
+h4:hover .header-anchor,
+h5:hover .header-anchor,
+h6:hover .header-anchor {
+    opacity: 1;
+}
+
+.header-anchor:hover {
+    color: var(--primary-color);
+}
+
+.header-anchor i {
+    font-size: 0.8em;
+}
