@@ -11,14 +11,14 @@ Sync adds several unique power types that enhance entity behavior and visual eff
 
 | Power Type | Description |
 |------------|-------------|
-| [Action on Death](./action_on_death.md) | Triggers actions when an entity dies |
-| [Emissive](./emissive.md) | Makes entities emit light (glow) |
-| [Entity Set](./entity_set.md) | Maintains a set of entities with custom actions |
-| [Entity Texture Overlay](./entity_texture_overlay.md) | Applies custom textures to entities |
-| [Flip Model](./flip_model.md) | Flips entity models upside down |
-| [Modify Model Parts](./modify_model_parts.md) | Adjusts position, rotation, and scale of model parts |
-| [Mobs Ignore](./mobs_ignore.md) | Makes hostile mobs ignore the entity |
-| [Pose](./pose.md) | Forces entities into specific poses |
+| [Action on Death](#action_on_death) | Triggers actions when an entity dies |
+| [Emissive](#emissive) | Makes entities emit light (glow) |
+| [Entity Set](#entity_set) | Maintains a set of entities with custom actions |
+| [Entity Texture Overlay](#entity_texture_overlay) | Applies custom textures to entities |
+| [Flip Model](#flip_model) | Flips entity models upside down |
+| [Modify Model Parts](#modify_model_parts) | Adjusts position, rotation, and scale of model parts |
+| [Mobs Ignore](#mobs_ignore) | Makes hostile mobs ignore the entity |
+| [Pose](#pose) | Forces entities into specific poses |
 
 ## Using Sync Power Types
 
@@ -33,4 +33,3 @@ Sync power types work alongside Apoli power types and can be combined with condi
     /* optional */
   }
 }
-```

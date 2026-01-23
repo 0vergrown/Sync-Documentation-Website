@@ -130,17 +130,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 
                 if (targetElement) {
                     e.preventDefault();
-                    const headerOffset = 100;
-                    const elementPosition = targetElement.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: "smooth"
-                    });
-
-                    // Update URL hash without scrolling
-                    window.history.replaceState(null, null, `#${targetId}`);
+                    smoothScrollTo(targetId);
                 }
             });
         });
@@ -254,6 +244,66 @@ document.addEventListener("DOMContentLoaded", async function() {
             console.error("Error loading sidebar:", error);
             sidebarMenu.innerHTML = "<li class='error'>Failed to load navigation. Please try again later.</li>";
         }
+    }
+
+    function interceptMarkdownLinks() {
+        // Intercept clicks on markdown content links
+        markdownContent.addEventListener('click', function(e) {
+            // Check if clicked element is a link
+            let target = e.target;
+            while (target && target !== markdownContent) {
+                if (target.tagName === 'A') {
+                    const href = target.getAttribute('href');
+
+                    // Check if it's a markdown link (ends with .md)
+                    if (href && href.endsWith('.md')) {
+                        e.preventDefault();
+
+                        // Parse the link to get folder and file
+                        const linkPath = href;
+
+                        // Handle different link formats
+                        if (linkPath.startsWith('./')) {
+                            // Same folder
+                            const fileName = linkPath.substring(2);
+                            loadMarkdown(currentFile.folder, fileName);
+                        } else if (linkPath.startsWith('../')) {
+                            // Parent folder
+                            const parts = linkPath.split('/');
+                            // Remove '..' and get the rest
+                            if (parts.length >= 2) {
+                                const folder = parts[1];
+                                const fileName = parts[2] || 'index.md';
+                                loadMarkdown(folder, fileName);
+                            }
+                        } else if (linkPath.includes('/')) {
+                            // Direct folder/file path
+                            const pathParts = linkPath.split('/');
+                            if (pathParts.length === 2) {
+                                loadMarkdown(pathParts[0], pathParts[1]);
+                            }
+                        } else {
+                            // Same folder, just file name
+                            loadMarkdown(currentFile.folder, linkPath);
+                        }
+
+                        return;
+                    }
+
+                    // Check if it's an anchor link
+                    if (href && href.startsWith('#')) {
+                        e.preventDefault();
+                        const targetId = href.substring(1);
+                        smoothScrollTo(targetId);
+                        return;
+                    }
+
+                    // Let other links (external, etc.) work normally
+                    break;
+                }
+                target = target.parentElement;
+            }
+        });
     }
 
     // Load markdown content
@@ -460,6 +510,9 @@ document.addEventListener("DOMContentLoaded", async function() {
 
         // Add smooth scrolling to anchor links
         addSmoothScrolling();
+
+        // Intercept markdown links
+        interceptMarkdownLinks();
     }
 
     // Add copy buttons to code blocks

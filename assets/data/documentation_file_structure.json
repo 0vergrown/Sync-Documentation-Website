@@ -28,9 +28,7 @@
   ],
   "bientity_actions": [
     "index.md",
-    "add_to_set.md",
-    "world_actions.md",
-    "custom_actions.md"
+    "add_to_set.md"
   ],
   "entity_conditions": [
     "index.md",
