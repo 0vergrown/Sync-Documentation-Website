@@ -13,7 +13,7 @@ Type ID: `sync:action_on_entity_set`
 
 Field | Type | Default | Description
 ------|------|---------|-------------
-`set` | [Power Type](https://origins.readthedocs.io/en/latest/types/data_types/power_type/) | | The Entity Set power to act upon
+`set` | [Power Type](https://origins.readthedocs.io/en/latest/types/power_types/) | | The Entity Set power to act upon
 `bientity_action` | [Bi-Entity Action](https://origins.readthedocs.io/en/latest/types/bientity_action_types/) | | Action to execute on each entity in the set
 `bientity_condition` | [Bi-Entity Condition](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/) | *optional* | Condition to filter which entities receive the action
 `limit` | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) | `0` | Maximum number of entities to affect (0 = no limit)
