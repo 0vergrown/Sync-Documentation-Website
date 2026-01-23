@@ -5,27 +5,46 @@
     "quick_start.md"
   ],
   "power_types": [
-    "introduction.md",
-    "custom_power.md",
-    "entity_power.md",
-    "world_power.md"
+    "index.md",
+    "action_on_death.md",
+    "emissive.md",
+    "entity_set.md",
+    "entity_texture_overlay.md",
+    "flip_model.md",
+    "mobs_ignore.md",
+    "modify_model_parts.md",
+    "pose.md"
   ],
-  "conditions": [
-    "introduction.md",
-    "entity_conditions.md",
-    "world_conditions.md",
-    "custom_conditions.md"
+  "entity_actions": [
+    "index.md",
+    "action_on_entity_set.md",
+    "key_pressed.md",
+    "print.md",
+    "radial_menu.md",
+    "random_teleport.md",
+    "set_summon_max_life.md",
+    "summon_clone.md",
+    "summon_minion.md"
   ],
-  "actions": [
-    "introduction.md",
-    "entity_actions.md",
+  "bientity_actions": [
+    "index.md",
+    "add_to_set.md",
     "world_actions.md",
     "custom_actions.md"
   ],
-  "examples": [
-    "basic_power.md",
-    "advanced_power.md",
-    "combining_features.md"
+  "entity_conditions": [
+    "index.md",
+    "entity_in_radius.md",
+    "entity_set_size.md",
+    "has_command_tag.md",
+    "in_pose.md"
+  ],
+  "bientity_conditions": [
+    "index.md",
+    "in_entity_set.md"
+  ],
+  "block_actions": [
+    "spawn_entity_block.md"
   ],
   "api_reference": [
     "overview.md",
