@@ -42,6 +42,7 @@
     "in_entity_set.md"
   ],
   "block_actions": [
+    "index.md",
     "spawn_entity_block.md"
   ],
   "api_reference": [
