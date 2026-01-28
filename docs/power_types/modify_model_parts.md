@@ -7,33 +7,15 @@ date: 2024-01-07
 
 [Power Types](https://origins.readthedocs.io/en/latest/types/power_types/)
 
-Modifies the position, rotation, scale, and visibility of entity model parts.
+Modifies the position, rotation, scale, and visibility of entity model parts, with optional animation override.
 
 Type ID: `sync:modify_model_parts`
 
 ### Fields
 
-Field | Type                                                                                                                                   | Default | Description
-------|----------------------------------------------------------------------------------------------------------------------------------------|---------|-------------
-`transformations` | [Array](https://origins.readthedocs.io/en/latest/types/data_types/array/) of [Model Part Transformations](#model-part-transformations) | | List of transformations to apply to model parts.
-
-### Model Part Transformations
-
-Each transformation is an [object](https://origins.readthedocs.io/en/latest/types/data_types/object/) with these fields:
-
-Field | Type | Description
-------|------|-------------
-`model_part` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | Which model part to transform: `head`, `hat`, `body`, `rightarm`, `leftarm`, `rightleg`, `leftleg`
-`type` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | Type of transformation: `pitch`, `yaw`, `roll`, `visible`, `hidden`, `xscale`, `yscale`, `zscale`, `pivotx`, `pivoty`, `pivotz`
-`value` | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) | Amount to transform (degrees for rotations, units for position, multiplier for scale, 0/1 for visibility)
-
-### Notes
-
-- Transformations are additive and stack with multiple powers
-- Scale defaults to 1.0 (values are added to this)
-- Position adjustments are relative to default pivot points
-- Visibility: `1` = visible, `0` = invisible
-- Hidden: `1` = hidden, `0` = not hidden
+Field | Type | Default | Description
+------|------|---------|-------------
+`transformations` | [Array](https://origins.readthedocs.io/en/latest/types/data_types/array/) of [Model Part Transformations](../data_types/model_part_transformations.md) | | List of transformations to apply to model parts. See the [Model Part Transformations](../data_types/model_part_transformations.md) documentation for details on each transformation.
 
 ### Examples
 
@@ -50,8 +32,69 @@ Field | Type | Description
             "model_part": "rightarm",
             "type": "roll",
             "value": 90.0
+        },
+        {
+            "model_part": "body",
+            "type": "xscale",
+            "value": 0.25
         }
     ]
 }
 ```
-This example tilts the head 45 degrees and rotates the right arm 90 degrees.
+This example tilts the head 45 degrees, rotates the right arm 90 degrees, and makes the body 25% wider.
+```json
+{
+    "type": "sync:modify_model_parts",
+    "transformations": [
+        {
+            "model_part": "leftleg",
+            "type": "pitch",
+            "value": 6.6,
+            "override_animation": true
+        },
+        {
+            "model_part": "rightarm",
+            "type": "pitch",
+            "value": 10.0,
+            "override_animation": false
+        }
+    ]
+}
+```
+This example locks the left leg's pitch to 6.6 degrees, preventing walking/swimming animations from changing it and adds 10.0 degrees to the right arm's pitch, but still allows vanilla animations to affect it.
+```json
+{
+    "type": "sync:modify_model_parts",
+    "transformations": [
+        {
+            "model_part": "head",
+            "type": "pitch",
+            "value": -10.0,
+            "override_animation": true
+        },
+        {
+            "model_part": "head",
+            "type": "yaw",
+            "value": 5.0
+        },
+        {
+            "model_part": "rightleg",
+            "type": "pitch",
+            "value": 15.0,
+            "override_animation": true
+        },
+        {
+            "model_part": "leftleg",
+            "type": "pitch",
+            "value": 15.0,
+            "override_animation": true
+        },
+        {
+            "model_part": "rightarm",
+            "type": "visible",
+            "value": 0
+        }
+    ]
+}
+```
+This example locks the head's pitch at -10 degrees (no nodding/bobbing animations) and adds 5 degrees to head yaw (still allows looking around) while also locking both legs' pitch at 15 degrees (walking animations disabled, legs stay bent) and hides the right arm completely.

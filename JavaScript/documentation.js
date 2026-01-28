@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         'entity_conditions': 'fas fa-sliders-h',
         'bientity_conditions': 'fas fa-code-branch',
         'block_actions': 'fas fa-cube',
-        'api_reference': 'fas fa-book'
+        'data_types': 'fas fa-book'
     };
 
     // Helper functions
@@ -68,40 +68,29 @@ document.addEventListener("DOMContentLoaded", async function() {
 
     // Generate quick links HTML from file structure
     function generateQuickLinks() {
+        // Don't generate if fileStructure is empty
         if (!fileStructure || Object.keys(fileStructure).length === 0) {
-            return `
-                <div class="quick-links">
-                    <a href="#" class="quick-link" data-folder="getting_started" data-file="introduction.md">
-                        <i class="fas fa-rocket"></i>
-                        <span>Getting Started</span>
-                    </a>
-                    <a href="#" class="quick-link" data-folder="power_types" data-file="index.md">
-                        <i class="fas fa-bolt"></i>
-                        <span>Power Types</span>
-                    </a>
-                    <a href="#" class="quick-link" data-folder="entity_conditions" data-file="index.md">
-                        <i class="fas fa-sliders-h"></i>
-                        <span>Entity Conditions</span>
-                    </a>
-                    <a href="#" class="quick-link" data-folder="entity_actions" data-file="index.md">
-                        <i class="fas fa-play"></i>
-                        <span>Entity Actions</span>
-                    </a>
-                </div>
-            `;
+            console.warn("fileStructure is empty, cannot generate quick links");
+            return '<div class="quick-links"><p>Loading categories...</p></div>';
         }
 
         let html = '<div class="quick-links">';
 
-        for (const folder in fileStructure) {
-            if (fileStructure[folder] && fileStructure[folder].length > 0) {
+        // Sort folders for consistent display
+        const sortedFolders = Object.keys(fileStructure).sort();
+
+        for (const folder of sortedFolders) {
+            const files = fileStructure[folder];
+            if (files && files.length > 0) {
                 const iconClass = getIconForFolder(folder);
                 const displayName = capitalizeAndFormat(folder);
 
                 // Find the main file (index.md or first file)
                 let mainFile = 'index.md';
-                if (!fileStructure[folder].includes('index.md') && fileStructure[folder].length > 0) {
-                    mainFile = fileStructure[folder][0];
+                if (!files.includes('index.md') && files.length > 0) {
+                    mainFile = files[0];
+                } else if (!files.includes('index.md') && files.includes('introduction.md')) {
+                    mainFile = 'introduction.md';
                 }
 
                 html += `
@@ -116,6 +105,26 @@ document.addEventListener("DOMContentLoaded", async function() {
         html += '</div>';
         return html;
     }
+
+        // Initialize quick links after file structure is loaded
+        async function initializeQuickLinks() {
+            const quickLinksContainer = document.querySelector('#markdownContent .quick-links');
+            if (quickLinksContainer) {
+                quickLinksContainer.innerHTML = generateQuickLinks();
+
+                // Attach event listeners to quick links
+                document.querySelectorAll('.quick-link').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const folder = link.dataset.folder;
+                        const file = link.dataset.file;
+                        if (folder && file) {
+                            loadMarkdown(folder, file);
+                        }
+                    });
+                });
+            }
+        }
 
     // Smooth scrolling function
     function addSmoothScrolling() {
@@ -200,6 +209,7 @@ document.addEventListener("DOMContentLoaded", async function() {
             if (!response.ok) throw new Error("Failed to fetch file structure");
 
             fileStructure = await response.json();
+            console.log("Loaded file structure:", fileStructure); // Debug log
 
             // Clear existing content
             sidebarMenu.innerHTML = "";
@@ -240,9 +250,16 @@ document.addEventListener("DOMContentLoaded", async function() {
                 });
                 sidebarMenu.appendChild(sublist);
             }
+
+            // Initialize quick links after sidebar is loaded
+            initializeQuickLinks();
+
         } catch (error) {
             console.error("Error loading sidebar:", error);
             sidebarMenu.innerHTML = "<li class='error'>Failed to load navigation. Please try again later.</li>";
+
+            // Try to initialize quick links anyway with fallback
+            initializeQuickLinks();
         }
     }
 

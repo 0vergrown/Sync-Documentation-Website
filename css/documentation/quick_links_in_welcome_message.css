@@ -3,41 +3,190 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 900px;
+    margin: 2rem auto;
 }
 
 .quick-link {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     padding: 2rem 1.5rem;
     background-color: var(--card-bg);
     border-radius: 12px;
-    transition: var(--transition);
+    transition: all 0.3s ease;
     color: var(--text-color);
     text-decoration: none;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    min-height: 160px;
+    position: relative;
+    overflow: hidden;
+}
+
+.quick-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .quick-link:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow);
-    color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.quick-link:hover::before {
+    opacity: 1;
+}
+
+.quick-link:hover i {
+    color: white;
+    transform: scale(1.1);
 }
 
 .quick-link i {
     font-size: 2.5rem;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
 }
 
 .quick-link span {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.1rem;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+/* Color variations for different categories */
+.quick-link[data-folder="getting_started"] i {
+    color: #4CAF50; /* Green for getting started */
+}
+
+.quick-link[data-folder="power_types"] i {
+    color: #FF9800; /* Orange for power types */
+}
+
+.quick-link[data-folder="entity_actions"] i {
+    color: #2196F3; /* Blue for entity actions */
+}
+
+.quick-link[data-folder="bientity_actions"] i {
+    color: #9C27B0; /* Purple for bientity actions */
+}
+
+.quick-link[data-folder="entity_conditions"] i {
+    color: #F44336; /* Red for entity conditions */
+}
+
+.quick-link[data-folder="bientity_conditions"] i {
+    color: #009688; /* Teal for bientity conditions */
+}
+
+.quick-link[data-folder="block_actions"] i {
+    color: #795548; /* Brown for block actions */
+}
+
+.quick-link[data-folder="data_types"] i {
+    color: #607D8B; /* Blue grey for data types */
+}
+
+/* Hover state colors - all become white */
+.quick-link:hover i {
+    color: white !important;
 }
 
 /* Responsive Design for Documentation */
+@media (max-width: 1024px) {
+    .quick-links {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+}
+
 @media (max-width: 768px) {
     .quick-links {
         grid-template-columns: 1fr;
+        max-width: 400px;
+        gap: 1rem;
+    }
+
+    .quick-link {
+        padding: 1.5rem 1rem;
+        min-height: 140px;
+    }
+
+    .quick-link i {
+        font-size: 2rem;
+    }
+
+    .quick-link span {
+        font-size: 1rem;
+    }
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .quick-link {
+    background-color: var(--card-bg);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .quick-link:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Loading state for quick links */
+.quick-links.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.quick-links .placeholder {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    border-radius: 12px;
+    min-height: 160px;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Accessibility focus states */
+.quick-link:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+.quick-link:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.quick-link:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+/* Print styles */
+@media print {
+    .quick-links {
+        display: none !important;
     }
 }

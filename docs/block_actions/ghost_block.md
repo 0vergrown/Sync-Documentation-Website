@@ -5,7 +5,7 @@ date: 2024-01-07
 
 # Ghost Block
 
-Places a temporary block at a position that automatically reverts after a specified duration. This is useful for creating temporary visual effects, timed platforms, or disappearing traps.
+Places a temporary block at a position that automatically reverts after a specified duration.
 
 Type ID: `sync:ghost_block`
 

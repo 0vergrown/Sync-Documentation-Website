@@ -46,9 +46,8 @@
     "ghost_block.md",
     "spawn_entity.md"
   ],
-  "api_reference": [
-    "overview.md",
-    "json_syntax.md",
-    "type_reference.md"
+  "data_types": [
+    "index.md",
+    "model_part_transformations.md"
   ]
 }
