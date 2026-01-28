@@ -43,6 +43,7 @@
   ],
   "block_actions": [
     "index.md",
+    "ghost_block.md",
     "spawn_entity.md"
   ],
   "api_reference": [

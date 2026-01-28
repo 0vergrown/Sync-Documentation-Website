@@ -11,7 +11,8 @@ Sync adds several block actions that can be used in data packs to create custom 
 
 | Action | Description |
 |--------|-------------|
-| [Spawn Entity Block](#spawn_entity_block) | Spawns an entity |
+| [Spawn Entity](#spawn_entity) | Spawns an entity at a block position |
+| [Ghost Block](#ghost_block) | Places a temporary block that reverts after specified duration |
 
 ## Using Sync Block Actions
 
