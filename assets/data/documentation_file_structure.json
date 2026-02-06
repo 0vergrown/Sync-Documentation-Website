@@ -18,7 +18,6 @@
   "entity_actions": [
     "index.md",
     "action_on_entity_set.md",
-    "key_pressed.md",
     "print.md",
     "radial_menu.md",
     "random_teleport.md",
@@ -35,7 +34,8 @@
     "entity_in_radius.md",
     "entity_set_size.md",
     "has_command_tag.md",
-    "in_pose.md"
+    "in_pose.md",
+    "key_pressed.md"
   ],
   "bientity_conditions": [
     "index.md",

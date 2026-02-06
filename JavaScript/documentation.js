@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", async function() {
     let searchIndex = [];
     
     // Configuration
-    const GITHUB_REPO = "https://github.com/0vergrown/Sync";
-    const GITHUB_DOCS_PATH = "/";
+    const GITHUB_REPO = "https://github.com/0vergrown/Sync-Documentation-Website";
+    const GITHUB_DOCS_PATH = "https://github.com/0vergrown/Sync-Documentation-Website/tree/main/docs";
 
     // Folder icons mapping
     const folderIcons = {
