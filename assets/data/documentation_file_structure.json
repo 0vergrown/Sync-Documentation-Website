@@ -7,23 +7,35 @@
   "power_types": [
     "index.md",
     "action_on_death.md",
+    "custom_projectile.md",
+    "edible_item.md",
     "emissive.md",
     "entity_set.md",
     "entity_texture_overlay.md",
     "flip_model.md",
     "mobs_ignore.md",
+    "modify_enchantment_level.md",
     "modify_model_parts.md",
-    "pose.md"
+    "modify_player_model.md",
+    "pose.md",
+    "prevent_sprinting_particles.md",
+    "sprinting.md"
   ],
   "entity_actions": [
     "index.md",
     "action_on_entity_set.md",
+    "custom_projectile.md",
+    "grant_all_powers.md",
     "print.md",
     "radial_menu.md",
     "random_teleport.md",
+    "revoke_all_powers.md",
+    "revoke_power.md",
+    "save_location.md",
     "set_summon_max_life.md",
     "summon_clone.md",
-    "summon_minion.md"
+    "summon_minion.md",
+    "teleport_to_location.md"
   ],
   "bientity_actions": [
     "index.md",
@@ -35,7 +47,8 @@
     "entity_set_size.md",
     "has_command_tag.md",
     "in_pose.md",
-    "key_pressed.md"
+    "key_pressed.md",
+    "player_model_type.md"
   ],
   "bientity_conditions": [
     "index.md",
@@ -48,6 +61,7 @@
   ],
   "data_types": [
     "index.md",
-    "model_part_transformations.md"
+    "model_part_transformations.md",
+    "radial_menu_entry.md"
   ]
 }
