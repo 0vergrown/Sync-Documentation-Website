@@ -23,7 +23,7 @@ Sync adds several entity actions that can be used in data packs to create custom
 | [Set Summon Max Life](./set_summon_max_life.md) | Sets the maximum lifetime for summoned entities |
 | [Summon Clone](./summon_clone.md) | Summons a clone of the player |
 | [Summon Minion](./summon_minion.md) | Summons a customizable minion entity |
-| [Teleport To Saved Location](./teleport_to_location.md) | Teleports to a previously saved location |
+| [Teleport To Location](./teleport_to_location.md) | Teleports to a previously saved location |
 
 ## Using Sync Entity Actions
 
