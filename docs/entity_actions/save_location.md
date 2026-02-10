@@ -7,7 +7,7 @@ date: 2024-01-07
 
 [Entity Action Types](https://origins.readthedocs.io/en/latest/types/entity_action_types/)
 
-Saves an entity's current position, dimension, and rotation for later teleportation using the [Teleport To Saved Location (Entity Action)](./teleport_to_location.md).
+Saves an entity's current position, dimension, and rotation for later teleportation using the [Teleport To Location (Entity Action)](./teleport_to_location.md).
 
 Type ID: `sync:save_location`
 
