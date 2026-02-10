@@ -1,9 +1,9 @@
 ---
-title: Teleport To Saved Location (Entity Action)
+title: Teleport To Location (Entity Action)
 date: 2024-01-07
 ---
 
-# Teleport To Saved Location
+# Teleport To Location
 
 [Entity Action Types](https://origins.readthedocs.io/en/latest/types/entity_action_types/)
 
