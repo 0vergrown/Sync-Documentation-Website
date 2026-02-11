@@ -12,7 +12,7 @@ Sync adds several unique power types that enhance entity behavior and visual eff
 | Power Type | Description |
 |------------|-------------|
 | [Action on Death](./action_on_death.md) | Triggers actions when an entity dies |
-| [Custom Projectile](./custom_projectile_power.md) | Creates a customizable projectile-firing ability |
+| [Custom Projectile](./custom_projectile.md) | Creates a customizable projectile-firing ability |
 | [Edible Item](./edible_item.md) | Makes non-food items consumable or modifies food properties |
 | [Emissive](./emissive.md) | Makes entities emit light (glow) |
 | [Entity Set](./entity_set.md) | Maintains a set of entities with custom actions |
