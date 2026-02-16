@@ -21,11 +21,11 @@ Sync adds several unique power types that enhance entity behavior and visual eff
 | [Flip Model](./flip_model.md) | Flips entity models upside down |
 | [Modify Enchantment Level](./modify_enchantment_level.md) | Dynamically modifies enchantment levels on items |
 | [Modify Enchantment Damage Dealt](./modify_enchantment_damage_dealt.md) | Modifies damage dealt based on enchantment level |
+| [Modify Label Render](./modify_label_render.md) | Modifies name tag rendering with custom text and visibility modes |
 | [Modify Model Parts](./modify_model_parts.md) | Adjusts position, rotation, and scale of model parts |
 | [Modify Player Model](./modify_player_model.md) | Changes player models to custom variants with extra limbs |
 | [Mobs Ignore](./mobs_ignore.md) | Makes hostile mobs ignore the entity |
 | [Pose](./pose.md) | Forces entities into specific poses |
-| [Prevent Label Render](./prevent_label_render.md) | Prevents the name tag label of the entity |
 | [Prevent Sprinting Particles](./prevent_sprinting_particles.md) | Prevents sprinting particle effects |
 | [Sprinting](./sprinting.md) | Forces entities to sprint automatically |
 
