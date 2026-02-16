@@ -10,14 +10,17 @@
     "custom_projectile.md",
     "edible_item.md",
     "emissive.md",
+    "energy_swirl.md",
     "entity_set.md",
     "entity_texture_overlay.md",
     "flip_model.md",
     "mobs_ignore.md",
     "modify_enchantment_level.md",
+    "modify_enchantment_damage_dealt.md",
     "modify_model_parts.md",
     "modify_player_model.md",
     "pose.md",
+    "prevent_label_render.md",
     "prevent_sprinting_particles.md",
     "sprinting.md"
   ],
@@ -32,10 +35,12 @@
     "revoke_all_powers.md",
     "revoke_power.md",
     "save_location.md",
+    "set_no_gravity.md",
     "set_summon_max_life.md",
     "summon_clone.md",
     "summon_minion.md",
-    "teleport_to_location.md"
+    "teleport_to_location.md",
+    "teleport_to_spawn.md"
   ],
   "bientity_actions": [
     "index.md",

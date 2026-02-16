@@ -5,6 +5,8 @@ date: 2024-01-07
 
 # Summon Minion
 
+[Entity Action Types](https://origins.readthedocs.io/en/latest/types/entity_action_types/)
+
 Summons a customizable minion entity that can follow the owner and has configurable appearance.
 
 Type ID: `sync:summon_minion`

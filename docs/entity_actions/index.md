@@ -21,9 +21,11 @@ Sync adds several entity actions that can be used in data packs to create custom
 | [Revoke Power](./revoke_power.md) | Removes a specific power from an entity |
 | [Save Location](./save_location.md) | Saves an entity's position for later teleportation |
 | [Set Summon Max Life](./set_summon_max_life.md) | Sets the maximum lifetime for summoned entities |
+| [Set No Gravity](./set_no_gravity.md) | Sets or toggles whether an entity is affected by gravity |
 | [Summon Clone](./summon_clone.md) | Summons a clone of the player |
 | [Summon Minion](./summon_minion.md) | Summons a customizable minion entity |
 | [Teleport To Location](./teleport_to_location.md) | Teleports to a previously saved location |
+| [Teleport to Spawn](./teleport_to_spawn.md) | Teleports a player to their spawn |
 
 ## Using Sync Entity Actions
 

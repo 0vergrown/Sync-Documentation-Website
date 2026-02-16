@@ -5,6 +5,8 @@ date: 2024-01-07
 
 # Summon Clone
 
+[Entity Action Types](https://origins.readthedocs.io/en/latest/types/entity_action_types/)
+
 Summons a clone of the player entity with configurable behavior and equipment inheritance.
 
 Type ID: `sync:summon_clone`

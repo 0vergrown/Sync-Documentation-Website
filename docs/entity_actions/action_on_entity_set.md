@@ -5,6 +5,8 @@ date: 2024-01-07
 
 # Action on Entity Set
 
+[Entity Action Types](https://origins.readthedocs.io/en/latest/types/entity_action_types/)
+
 Executes a bi-entity action on entities stored in an [Entity Set power](../power_types/entity_set.md). This allows you to perform actions on all entities in a set with optional filtering and limits.
 
 Type ID: `sync:action_on_entity_set`

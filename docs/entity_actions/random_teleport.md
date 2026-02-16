@@ -5,6 +5,8 @@ date: 2024-01-07
 
 # Random Teleport
 
+[Entity Action Types](https://origins.readthedocs.io/en/latest/types/entity_action_types/)
+
 Teleports an entity to a random location within a defined area, with configurable landing conditions and success/failure actions.
 
 Type ID: `sync:random_teleport`

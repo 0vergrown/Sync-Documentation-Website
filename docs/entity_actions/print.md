@@ -5,6 +5,8 @@ date: 2024-01-07
 
 # Print
 
+[Entity Action Types](https://origins.readthedocs.io/en/latest/types/entity_action_types/)
+
 Logs a message to the console with optional display in player chat. Useful for debugging or providing feedback.
 
 Type ID: `sync:print`

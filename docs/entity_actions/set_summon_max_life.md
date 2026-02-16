@@ -5,6 +5,8 @@ date: 2024-01-07
 
 # Set Summon Max Life
 
+[Entity Action Types](https://origins.readthedocs.io/en/latest/types/entity_action_types/)
+
 Sets the maximum lifetime for temporary summoned entities (clones and minions). This allows you to extend or shorten how long they last.
 
 Type ID: `sync:set_summon_max_life_ticks`
