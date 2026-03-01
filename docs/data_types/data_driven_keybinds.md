@@ -228,7 +228,7 @@ Condition checking whether the key is currently held:
 
 ### Notes
 
-- Keybinds are **server-defined** — a client connecting to a server without any keybind data packs will have no dynamic keybinds registered.
+- Keybinds are **server-defined** - a client connecting to a server without any keybind data packs will have no dynamic keybinds registered.
 - Keybinds only exist while the client is **connected to the server** that defined them. They are removed on disconnect.
 - Multiple data packs can define keybinds in the same or different namespaces without conflict, as long as their file paths differ.
 - If two keybinds are assigned the same physical key, the vanilla Controls screen will highlight the conflict in red, identical to built-in keybind conflicts.
