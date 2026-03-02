@@ -13,14 +13,14 @@ Type ID: `sync:ghost_block`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`block` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) | | The block ID to temporarily place
-`nbt` | [NBT](https://origins.readthedocs.io/en/latest/types/data_types/nbt/) | *optional* | NBT data for the block entity (if the block has one)
-`tick` | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) | `20` | How long the ghost block lasts in ticks (20 ticks = 1 second)
-`block_action` | [Block Action](https://origins.readthedocs.io/en/latest/types/block_action_types/) | *optional* | Action to execute on the ghost block after placement
-`add_block` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `false` | If true, places the block adjacent to the target position (using the direction parameter)
-`end_action` | [Block Action](https://origins.readthedocs.io/en/latest/types/block_action_types/) | *optional* | Action to execute when the ghost block expires/reverts
+| Field          | Type                                                                                | Default    | Description                                                                               |
+|----------------|-------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------|
+| `block`        | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) |            | The block ID to temporarily place                                                         |
+| `nbt`          | [NBT](https://origins.readthedocs.io/en/latest/types/data_types/nbt/)               | *optional* | NBT data for the block entity (if the block has one)                                      |
+| `tick`         | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/)       | `20`       | How long the ghost block lasts in ticks (20 ticks = 1 second)                             |
+| `block_action` | [Block Action](https://origins.readthedocs.io/en/latest/types/block_action_types/)  | *optional* | Action to execute on the ghost block after placement                                      |
+| `add_block`    | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)       | `false`    | If true, places the block adjacent to the target position (using the direction parameter) |
+| `end_action`   | [Block Action](https://origins.readthedocs.io/en/latest/types/block_action_types/)  | *optional* | Action to execute when the ghost block expires/reverts                                    |
 
 ### How It Works
 

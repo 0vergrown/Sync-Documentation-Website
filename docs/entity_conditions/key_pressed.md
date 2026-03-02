@@ -11,10 +11,10 @@ Type ID: `sync:key_pressed`
 
 ### Fields
 
-Field | Type                                                                  | Default | Description
-------|-----------------------------------------------------------------------|---------|-------------
-`key` | [Key](https://origins.readthedocs.io/en/latest/types/data_types/key/) | | Translation key of the key to check
-`continuous` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)                                   | `true` | Whether to check for continuous press or just the initial press
+| Field        | Type                                                                          | Default | Description                                                     |
+|--------------|-------------------------------------------------------------------------------|---------|-----------------------------------------------------------------|
+| `key`        | [Key](https://origins.readthedocs.io/en/latest/types/data_types/key/)         |         | Translation key of the key to check                             |
+| `continuous` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `true`  | Whether to check for continuous press or just the initial press |
 
 ### Notes
 
@@ -26,9 +26,11 @@ Field | Type                                                                  | 
 
 ```json
 {
-    "type": "sync:key_pressed",
+  "type": "sync:key_pressed",
+  "key": {
     "key": "key.attack",
     "continuous": false
+  }
 }
 ```
 This example checks if the player just pressed the attack button (left click).

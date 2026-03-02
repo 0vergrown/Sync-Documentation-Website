@@ -11,11 +11,11 @@ Type ID: `sync:entity_set_size`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`set` | [Power Type](https://origins.readthedocs.io/en/latest/types/data_types/power_type/) | | The Entity Set power to check
-`comparison` | [Comparison](https://origins.readthedocs.io/en/latest/types/data_types/comparison/) | | How to compare the size
-`compare_to` | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) | | Value to compare against
+| Field        | Type                                                                                | Default | Description                   |
+|--------------|-------------------------------------------------------------------------------------|---------|-------------------------------|
+| `set`        | [Power Type](https://origins.readthedocs.io/en/latest/types/data_types/power_type/) |         | The Entity Set power to check |
+| `comparison` | [Comparison](https://origins.readthedocs.io/en/latest/types/data_types/comparison/) |         | How to compare the size       |
+| `compare_to` | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/)       |         | Value to compare against      |
 
 ### Notes
 

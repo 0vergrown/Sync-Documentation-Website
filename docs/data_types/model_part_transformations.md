@@ -15,12 +15,12 @@ This data type is an [Array](https://origins.readthedocs.io/en/latest/types/data
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`model_part` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | | The model part to transform. Must be one of: `head`, `hat`, `body`, `rightarm`, `leftarm`, `rightleg`, `leftleg`
-`type` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | | The type of transformation. Must be one of: `pitch`, `yaw`, `roll`, `visible`, `hidden`, `xscale`, `yscale`, `zscale`, `pivotx`, `pivoty`, `pivotz`
-`value` | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) | | The amount to transform. For rotations (pitch/yaw/roll): degrees. For positions (pivotx/pivoty/pivotz): units. For scale (xscale/yscale/zscale): multiplier (added to base scale of 1.0). For visibility (visible/hidden): `1` for true/visible, `0` for false/hidden.
-`override_animation` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `false` | When `true`, locks the specified rotation (pitch, yaw, or roll) to the exact value, preventing vanilla animations from affecting that rotation on that body part. When `false` or omitted, the transformation is additive and vanilla animations can still affect the part.
+| Field                | Type                                                                          | Default | Description                                                                                                                                                                                                                                                                 |
+|----------------------|-------------------------------------------------------------------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `model_part`         | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/)   |         | The model part to transform. Must be one of: `head`, `hat`, `body`, `rightarm`, `leftarm`, `rightleg`, `leftleg`                                                                                                                                                            |
+| `type`               | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/)   |         | The type of transformation. Must be one of: `pitch`, `yaw`, `roll`, `visible`, `hidden`, `xscale`, `yscale`, `zscale`, `pivotx`, `pivoty`, `pivotz`                                                                                                                         |
+| `value`              | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)     |         | The amount to transform. For rotations (pitch/yaw/roll): degrees. For positions (pivotx/pivoty/pivotz): units. For scale (xscale/yscale/zscale): multiplier (added to base scale of 1.0). For visibility (visible/hidden): `1` for true/visible, `0` for false/hidden.      |
+| `override_animation` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `false` | When `true`, locks the specified rotation (pitch, yaw, or roll) to the exact value, preventing vanilla animations from affecting that rotation on that body part. When `false` or omitted, the transformation is additive and vanilla animations can still affect the part. |
 
 ### Transformation Types Explained
 

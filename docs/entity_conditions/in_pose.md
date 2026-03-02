@@ -11,9 +11,9 @@ Type ID: `sync:in_pose`
 
 ### Fields
 
-Field | Type                                   | Default | Description
-------|----------------------------------------|---------|-------------
-`pose` | [Entity Pose](../power_types/pose#available-poses.md) | | The pose to check for
+| Field  | Type                                                  | Default | Description           |
+|--------|-------------------------------------------------------|---------|-----------------------|
+| `pose` | [Entity Pose](../power_types/pose#available-poses.md) |         | The pose to check for |
 
 ### Notes
 

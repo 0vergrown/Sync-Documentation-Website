@@ -13,9 +13,9 @@ Type ID: `sync:teleport_to_spawn`
 
 ### Fields
 
-Field          | Type                                                                                                  | Default | Description
----------------|-------------------------------------------------------------------------------------------------------|---------|-------------
-`player_spawn` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)                         | `false` | If `true`, teleports to the player's personal spawn point (bed or respawn anchor). If `false`, teleports to the world spawn point in the overworld.
+| Field          | Type                                                                          | Default | Description                                                                                                                                         |
+|----------------|-------------------------------------------------------------------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| `player_spawn` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `false` | If `true`, teleports to the player's personal spawn point (bed or respawn anchor). If `false`, teleports to the world spawn point in the overworld. |
 
 ### Notes
 

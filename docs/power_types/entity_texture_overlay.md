@@ -13,17 +13,17 @@ Type ID: `sync:entity_texture_overlay`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`wide_texture_location` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) | | Texture location for wide-armed models.
-`slim_texture_location` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) | | Texture location for slim-armed models.
-`show_first_person` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `false` | Whether to show the texture in first-person view.
-`render_as_overlay` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `false` | If true, renders over existing texture; if false, replaces it.
-`red` | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) | `1.0` | Red color channel multiplier (0.0-1.0).
-`green` | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) | `1.0` | Green color channel multiplier (0.0-1.0).
-`blue` | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) | `1.0` | Blue color channel multiplier (0.0-1.0).
-`alpha` | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) | `1.0` | Alpha/transparency (0.0-1.0).
-`hide_cape` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `false` | Whether to hide the player's cape.
+| Field                   | Type                                                                                | Default | Description                                                    |
+|-------------------------|-------------------------------------------------------------------------------------|---------|----------------------------------------------------------------|
+| `wide_texture_location` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) |         | Texture location for wide-armed models.                        |
+| `slim_texture_location` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) |         | Texture location for slim-armed models.                        |
+| `show_first_person`     | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)       | `false` | Whether to show the texture in first-person view.              |
+| `render_as_overlay`     | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)       | `false` | If true, renders over existing texture; if false, replaces it. |
+| `red`                   | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)           | `1.0`   | Red color channel multiplier (0.0-1.0).                        |
+| `green`                 | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)           | `1.0`   | Green color channel multiplier (0.0-1.0).                      |
+| `blue`                  | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)           | `1.0`   | Blue color channel multiplier (0.0-1.0).                       |
+| `alpha`                 | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)           | `1.0`   | Alpha/transparency (0.0-1.0).                                  |
+| `hide_cape`             | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)       | `false` | Whether to hide the player's cape.                             |
 
 ### Examples
 

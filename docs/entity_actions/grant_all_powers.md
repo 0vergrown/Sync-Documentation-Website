@@ -13,9 +13,9 @@ Type ID: `sync:grant_all_powers`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`source` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) | | The source identifier whose powers should be granted
+| Field    | Type                                                                                | Default | Description                                          |
+|----------|-------------------------------------------------------------------------------------|---------|------------------------------------------------------|
+| `source` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) |         | The source identifier whose powers should be granted |
 
 ### How It Works
 
@@ -40,19 +40,6 @@ Powers already possessed by the entity are not duplicated.
 - Automatically synchronizes after granting
 - Works best when combined with Origins or explicit registration
 - The namespace fallback may grant unintended powers if broadly namespaced
-
-### Registering Custom Sources
-
-You can register which powers belong to a source in code:
-
-```java
-GrantAllPowersAction.registerPowersForSource(
-    new Identifier("sync", "custom_class"),
-    new Identifier("sync", "power_1"),
-    new Identifier("sync", "power_2"),
-    new Identifier("sync", "power_3")
-);
-```
 
 ### Examples
 

@@ -13,9 +13,9 @@ Type ID: `sync:modify_player_model`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`model` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | | The model variant to use. Valid values: `FOUR_ARMS`, `STINKFLY`
+| Field   | Type                                                                        | Default | Description                                                     |
+|---------|-----------------------------------------------------------------------------|---------|-----------------------------------------------------------------|
+| `model` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) |         | The model variant to use. Valid values: `FOUR_ARMS`, `STINKFLY` |
 
 ### How It Works
 

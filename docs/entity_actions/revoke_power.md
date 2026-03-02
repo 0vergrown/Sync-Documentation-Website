@@ -13,9 +13,9 @@ Type ID: `sync:revoke_power`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`power` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) | | The power type to remove (e.g., `"origins:water_breathing"`)
+| Field   | Type                                                                                | Default | Description                                                  |
+|---------|-------------------------------------------------------------------------------------|---------|--------------------------------------------------------------|
+| `power` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) |         | The power type to remove (e.g., `"origins:water_breathing"`) |
 
 ### How It Works
 

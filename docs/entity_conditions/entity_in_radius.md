@@ -11,13 +11,13 @@ Type ID: `sync:entity_in_radius`
 
 ### Fields
 
-Field | Type | Default                 | Description
-------|------|-------------------------|-------------
-`bientity_condition` | [Bi-Entity Condition](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/) | *optional*                  | Optional condition to filter counted entities
-`shape` | [Shape](https://origins.readthedocs.io/en/latest/types/data_types/shape/) | `cube`                  | Determines the shape of the area used for checking how many entities fulfill the bi-entity condition.
-`radius` | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) |                         | Radius/distance for detection
-`comparison` | [Comparison](https://origins.readthedocs.io/en/latest/types/data_types/comparison/) | `>=` | How to compare the count
-`compare_to` | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) | `1`                     | Minimum number of entities required
+| Field                | Type                                                                                            | Default    | Description                                                                                           |
+|----------------------|-------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------|
+| `bientity_condition` | [Bi-Entity Condition](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/) | *optional* | Optional condition to filter counted entities                                                         |
+| `shape`              | [Shape](https://origins.readthedocs.io/en/latest/types/data_types/shape/)                       | `cube`     | Determines the shape of the area used for checking how many entities fulfill the bi-entity condition. |
+| `radius`             | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                       |            | Radius/distance for detection                                                                         |
+| `comparison`         | [Comparison](https://origins.readthedocs.io/en/latest/types/data_types/comparison/)             | `>=`       | How to compare the count                                                                              |
+| `compare_to`         | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/)                   | `1`        | Minimum number of entities required                                                                   |
 
 ### Notes
 

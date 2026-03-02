@@ -32,11 +32,11 @@ data/<namespace>/keybinds/<id>.json
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`key` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | *required* | The default GLFW key translation key (e.g. `"key.keyboard.h"`). See [Key Names](#key-names) below.
-`category` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | *required* | The Controls screen category this keybind is grouped under (e.g. `"key.categories.misc"`). Custom category strings are supported and will be registered automatically.
-`name` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | *optional* | A human-readable label hint. This does **not** change what is displayed in the Controls screen — add a lang file entry for that (see [Display Names](#display-names)).
+| Field      | Type                                                                        | Default    | Description                                                                                                                                                            |
+|------------|-----------------------------------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `key`      | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | *required* | The default GLFW key translation key (e.g. `"key.keyboard.h"`). See [Key Names](#key-names) below.                                                                     |
+| `category` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | *required* | The Controls screen category this keybind is grouped under (e.g. `"key.categories.misc"`). Custom category strings are supported and will be registered automatically. |
+| `name`     | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | *optional* | A human-readable label hint. This does **not** change what is displayed in the Controls screen — add a lang file entry for that (see [Display Names](#display-names)). |
 
 ---
 
@@ -103,21 +103,21 @@ On the next session, the system reads `options.txt` during keybind registration 
 
 The `key` field accepts any GLFW key translation key. Common values:
 
-| Key | Value |
-|-----|-------|
-| A–Z | `key.keyboard.a` – `key.keyboard.z` |
-| 0–9 | `key.keyboard.0` – `key.keyboard.9` |
-| F1–F12 | `key.keyboard.f1` – `key.keyboard.f12` |
-| Left Mouse | `key.mouse.left` |
-| Right Mouse | `key.mouse.right` |
-| Middle Mouse | `key.mouse.middle` |
-| Space | `key.keyboard.space` |
-| Left Shift | `key.keyboard.left.shift` |
-| Left Control | `key.keyboard.left.control` |
-| Left Alt | `key.keyboard.left.alt` |
-| Tab | `key.keyboard.tab` |
-| Escape | `key.keyboard.escape` |
-| Enter | `key.keyboard.enter` |
+| Key          | Value                                  |
+|--------------|----------------------------------------|
+| A–Z          | `key.keyboard.a` – `key.keyboard.z`    |
+| 0–9          | `key.keyboard.0` – `key.keyboard.9`    |
+| F1–F12       | `key.keyboard.f1` – `key.keyboard.f12` |
+| Left Mouse   | `key.mouse.left`                       |
+| Right Mouse  | `key.mouse.right`                      |
+| Middle Mouse | `key.mouse.middle`                     |
+| Space        | `key.keyboard.space`                   |
+| Left Shift   | `key.keyboard.left.shift`              |
+| Left Control | `key.keyboard.left.control`            |
+| Left Alt     | `key.keyboard.left.alt`                |
+| Tab          | `key.keyboard.tab`                     |
+| Escape       | `key.keyboard.escape`                  |
+| Enter        | `key.keyboard.enter`                   |
 
 For a full list, refer to the [GLFW key names](https://www.glfw.org/docs/latest/group__keys.html) or the vanilla `InputUtil` class.
 
@@ -127,15 +127,15 @@ For a full list, refer to the [GLFW key names](https://www.glfw.org/docs/latest/
 
 These vanilla category strings place your keybind alongside existing controls:
 
-| Category | Description |
-|----------|-------------|
-| `key.categories.movement` | Movement keys (sprint, sneak, jump) |
-| `key.categories.gameplay` | Gameplay keys (attack, use, pick block) |
-| `key.categories.inventory` | Inventory keys |
-| `key.categories.creative` | Creative mode keys |
-| `key.categories.multiplayer` | Multiplayer keys |
-| `key.categories.ui` | UI keys (screenshot, fullscreen) |
-| `key.categories.misc` | Miscellaneous keys |
+| Category                     | Description                             |
+|------------------------------|-----------------------------------------|
+| `key.categories.movement`    | Movement keys (sprint, sneak, jump)     |
+| `key.categories.gameplay`    | Gameplay keys (attack, use, pick block) |
+| `key.categories.inventory`   | Inventory keys                          |
+| `key.categories.creative`    | Creative mode keys                      |
+| `key.categories.multiplayer` | Multiplayer keys                        |
+| `key.categories.ui`          | UI keys (screenshot, fullscreen)        |
+| `key.categories.misc`        | Miscellaneous keys                      |
 
 Custom strings (e.g. `key.categories.mymod`) are registered automatically and will appear as a new section in the Controls screen. Add a lang entry to display a readable name:
 ```json
@@ -223,8 +223,6 @@ Condition checking whether the key is currently held:
   "continuous": true
 }
 ```
-
----
 
 ### Notes
 

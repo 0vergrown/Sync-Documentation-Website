@@ -13,9 +13,9 @@ Type ID: `sync:revoke_all_powers`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`source` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) | | The source identifier whose powers should be removed
+| Field    | Type                                                                                | Default | Description                                          |
+|----------|-------------------------------------------------------------------------------------|---------|------------------------------------------------------|
+| `source` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) |         | The source identifier whose powers should be removed |
 
 ### How It Works
 

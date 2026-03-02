@@ -9,10 +9,12 @@ Sync adds specialized bientity action types that work with its Entity Set power 
 
 ## Available Bientity Action Types
 
-| Action Type | Description |
-|------------|-------------|
-| [Add to Entity Set](./add_to_entity_set.md) | Adds an entity to an Entity Set |
-| [Remove from Entity Set](./remove_from_entity_set.md) | Removes an entity from an Entity Set |
+| Action Type                                           | Description                               |
+|-------------------------------------------------------|-------------------------------------------|
+| [Add to Entity Set](./add_to_entity_set.md)           | Adds an entity to an Entity Set           |
+| [Disguise](./disguise.md)                             | Makes the actor appear as the target      |
+| [Execute Command](./execute_command.md)               | Executes a command with UUID placeholders |
+| [Remove from Entity Set](./remove_from_entity_set.md) | Removes an entity from an Entity Set      |
 
 ## How Bientity Actions Work
 

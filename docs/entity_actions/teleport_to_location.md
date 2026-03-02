@@ -13,9 +13,9 @@ Type ID: `sync:teleport_to_location`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`id` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | | The identifier of the saved location to teleport to
+| Field | Type                                                                        | Default | Description                                         |
+|-------|-----------------------------------------------------------------------------|---------|-----------------------------------------------------|
+| `id`  | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) |         | The identifier of the saved location to teleport to |
 
 ### How It Works
 

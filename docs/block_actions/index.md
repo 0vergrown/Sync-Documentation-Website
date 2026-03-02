@@ -9,10 +9,10 @@ Sync adds several block actions that can be used in data packs to create custom 
 
 ## Available Block Actions
 
-| Action | Description |
-|--------|-------------|
-| [Spawn Entity](#spawn_entity) | Spawns an entity at a block position |
-| [Ghost Block](#ghost_block) | Places a temporary block that reverts after specified duration |
+| Action                         | Description                                                    |
+|--------------------------------|----------------------------------------------------------------|
+| [Spawn Entity](./spawn_entity) | Spawns an entity at a block position                           |
+| [Ghost Block](./ghost_block)   | Places a temporary block that reverts after specified duration |
 
 ## Using Sync Block Actions
 

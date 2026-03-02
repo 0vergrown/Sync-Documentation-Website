@@ -13,9 +13,9 @@ Type ID: `sync:player_model_type`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`model_type` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | | The model type to check for. Valid values: `"wide"` or `"slim"`
+| Field        | Type                                                                        | Default | Description                                                     |
+|--------------|-----------------------------------------------------------------------------|---------|-----------------------------------------------------------------|
+| `model_type` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) |         | The model type to check for. Valid values: `"wide"` or `"slim"` |
 
 ### How It Works
 

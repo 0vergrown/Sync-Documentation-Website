@@ -13,9 +13,9 @@ Type ID: `sync:modify_model_parts`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`transformations` | [Array](https://origins.readthedocs.io/en/latest/types/data_types/array/) of [Model Part Transformations](../data_types/model_part_transformations.md) | | List of transformations to apply to model parts. See the [Model Part Transformations](../data_types/model_part_transformations.md) documentation for details on each transformation.
+| Field             | Type                                                                                                                                                   | Default | Description                                                                                                                                                                          |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `transformations` | [Array](https://origins.readthedocs.io/en/latest/types/data_types/array/) of [Model Part Transformations](../data_types/model_part_transformations.md) |         | List of transformations to apply to model parts. See the [Model Part Transformations](../data_types/model_part_transformations.md) documentation for details on each transformation. |
 
 ### Examples
 

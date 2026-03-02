@@ -13,11 +13,11 @@ Type ID: `sync:energy_swirl`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`texture_location` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) | `"minecraft:textures/entity/wither/wither_armor.png"` | The texture used for the energy swirl overlay. If omitted, the Wither armour texture is used.
-`size` | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) | `1.0` | The scale of the swirl relative to the entity’s normal size.
-`speed` | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) | `0.01` | The speed at which the overlay animates. Set to `0` for a completely static overlay.
+| Field              | Type                                                                                | Default                                               | Description                                                                                   |
+|--------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| `texture_location` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) | `"minecraft:textures/entity/wither/wither_armor.png"` | The texture used for the energy swirl overlay. If omitted, the Wither armour texture is used. |
+| `size`             | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)           | `1.0`                                                 | The scale of the swirl relative to the entity’s normal size.                                  |
+| `speed`            | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)           | `0.01`                                                | The speed at which the overlay animates. Set to `0` for a completely static overlay.          |
 
 ### Notes
 

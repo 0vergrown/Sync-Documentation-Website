@@ -13,9 +13,9 @@ Type ID: `sync:flip_model`
 
 ### Fields
 
-Field | Type                                                                          | Default | Description
-------|-------------------------------------------------------------------------------|---------|-------------
-`flip_view` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `false` | Whether to also flip the first-person camera view.
+| Field       | Type                                                                          | Default | Description                                        |
+|-------------|-------------------------------------------------------------------------------|---------|----------------------------------------------------|
+| `flip_view` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `false` | Whether to also flip the first-person camera view. |
 
 ### Notes
 

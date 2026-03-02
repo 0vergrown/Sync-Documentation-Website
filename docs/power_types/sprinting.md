@@ -13,9 +13,9 @@ Type ID: `sync:sprinting`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`requires_input` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `false` | If true, only sprints when the entity is providing movement input (forward key or sprint key). If false, always sprints when moving.
+| Field            | Type                                                                          | Default | Description                                                                                                                          |
+|------------------|-------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------|
+| `requires_input` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `false` | If true, only sprints when the entity is providing movement input (forward key or sprint key). If false, always sprints when moving. |
 
 ### How It Works
 

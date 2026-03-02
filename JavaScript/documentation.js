@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", async function() {
         'bientity_conditions': 'fas fa-code-branch',
         'block_actions': 'fas fa-cube',
         'data_types': 'fas fa-book'
+        'item_actions': 'fa-solid fa-list'
+        'item_conditions': 'fa-solid fa-table-list'
     };
 
     // Helper functions

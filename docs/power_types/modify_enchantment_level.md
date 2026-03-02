@@ -13,12 +13,12 @@ Type ID: `sync:modify_enchantment_level`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`enchantment` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) | | ID of the enchantment to apply/modify the level of to the entity. (e.g., `"minecraft:sharpness"`).
-`item_condition` | [Item Condition](https://origins.readthedocs.io/en/latest/types/item_condition_types/) | *optional* | If specified, only applies/modifies the level of the specified enchantment to/from the entity if the item condition is fulfilled by the item.
-`modifier` | [Attribute Modifier](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier/) | *optional* | If specified, this modifier will be applied to the current level of the specified enchantment from the entity.
-`modifiers` | [Array](https://origins.readthedocs.io/en/latest/types/data_types/array/) of [Attribute Modifiers](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier/) | *optional* | If specified, these modifiers will be applied to the current level of the specified enchantment from the entity.
+| Field            | Type                                                                                                                                                                              | Default    | Description                                                                                                                                   |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| `enchantment`    | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/)                                                                                               |            | ID of the enchantment to apply/modify the level of to the entity. (e.g., `"minecraft:sharpness"`).                                            |
+| `item_condition` | [Item Condition](https://origins.readthedocs.io/en/latest/types/item_condition_types/)                                                                                            | *optional* | If specified, only applies/modifies the level of the specified enchantment to/from the entity if the item condition is fulfilled by the item. |
+| `modifier`       | [Attribute Modifier](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier/)                                                                               | *optional* | If specified, this modifier will be applied to the current level of the specified enchantment from the entity.                                |
+| `modifiers`      | [Array](https://origins.readthedocs.io/en/latest/types/data_types/array/) of [Attribute Modifiers](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier/) | *optional* | If specified, these modifiers will be applied to the current level of the specified enchantment from the entity.                              |
 
 ### How It Works
 

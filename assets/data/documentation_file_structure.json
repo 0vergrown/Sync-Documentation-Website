@@ -7,6 +7,7 @@
   "power_types": [
     "index.md",
     "action_on_death.md",
+    "action_on_key_sequence.md",
     "custom_projectile.md",
     "edible_item.md",
     "emissive.md",
@@ -32,6 +33,7 @@
     "print.md",
     "radial_menu.md",
     "random_teleport.md",
+    "remove_disguise.md",
     "revoke_all_powers.md",
     "revoke_power.md",
     "save_location.md",
@@ -44,10 +46,14 @@
   ],
   "bientity_actions": [
     "index.md",
-    "add_to_set.md"
+    "add_to_entity_set.md",
+    "disguise.md",
+    "execute_command.md",
+    "remove_from_entity_set.md"
   ],
   "entity_conditions": [
     "index.md",
+    "disguised.md",
     "entity_in_radius.md",
     "entity_set_size.md",
     "has_command_tag.md",
@@ -57,6 +63,8 @@
   ],
   "bientity_conditions": [
     "index.md",
+    "command.md",
+    "disguised.md",
     "in_entity_set.md"
   ],
   "block_actions": [
@@ -64,9 +72,19 @@
     "ghost_block.md",
     "spawn_entity.md"
   ],
+  "item_actions": [
+    "index.md",
+    "holder_action.md"
+  ],
+  "item_conditions": [
+    "index.md",
+    "fuel.md",
+    "holder_condition.md"
+  ],
   "data_types": [
     "index.md",
     "data_driven_keybinds.md",
+    "functional_key.md",
     "model_part_transformations.md",
     "radial_menu_entry.md"
   ]

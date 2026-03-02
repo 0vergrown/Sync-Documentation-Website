@@ -9,8 +9,10 @@ Sync adds bientity conditions for checking relationships between pairs of entiti
 
 ## Available Bientity Conditions
 
-| Condition | Description |
-|-----------|-------------|
+| Condition                           | Description                                            |
+|-------------------------------------|--------------------------------------------------------|
+| [Command](./command.md)             | Executes a command and compares its integer result     |
+| [Disguised](./disguised.md)         | Checks if the actor is disguised as the target         |
 | [In Entity Set](./in_entity_set.md) | Checks if one entity is in another entity's entity set |
 
 ## Using Sync Bientity Conditions

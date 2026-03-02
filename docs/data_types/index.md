@@ -1,6 +1,6 @@
 ---
 title: Data Types
-date: 2024-01-07
+date: 2026-03-01
 ---
 
 # Data Types
@@ -9,10 +9,13 @@ Sync adds custom data types that are used to configure various power types and a
 
 ## Available Data Types
 
-| Data Type | Description |
-|-----------|-------------|
-| [Model Part Transformations](./model_part_transformations.md) | Transformations to apply to entity model parts |
-| [Radial Menu Entry](./radial_menu_entry.md) | Configuration for a single radial menu button |
+| Data Type                                                     | Description                                                       |
+|---------------------------------------------------------------|-------------------------------------------------------------------|
+| [Data-Driven Keybinds](./data_driven_keybinds.md)             | Server-defined keybinds automatically synced to clients           |
+| [Functional Key](./functional_key.md)                         | A keybind that can trigger an action when pressed                 |
+| [Message Consumer](./message_consumer.md)                     | A regex filter with before/after actions for message interception |
+| [Model Part Transformations](./model_part_transformations.md) | Transformations to apply to entity model parts                    |
+| [Radial Menu Entry](./radial_menu_entry.md)                   | Configuration for a single radial menu button                     |
 
 ## Using Data Types in Sync
 

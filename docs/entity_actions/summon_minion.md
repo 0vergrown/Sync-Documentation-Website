@@ -13,15 +13,15 @@ Type ID: `sync:summon_minion`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`texture` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) | `sync:textures/entity/minion_template.png` | Texture for the minion
-`follow_owner` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | | Whether the minion follows its owner
-`follow_offset` | [Vector](https://origins.readthedocs.io/en/latest/types/data_types/vector/) | *optional* | Offset position when following
-`scale` | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/) | `1.0` | Size multiplier for the minion
-`invulnerable` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `false` | Whether the minion can take damage
-`max_life_ticks` | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) | `1200` | Lifespan in ticks (20 ticks = 1 second)
-`bientity_action` | [Bi-Entity Action](https://origins.readthedocs.io/en/latest/types/bientity_action_types/) | *optional* | Action to execute on the minion after summoning
+| Field             | Type                                                                                      | Default                                    | Description                                     |
+|-------------------|-------------------------------------------------------------------------------------------|--------------------------------------------|-------------------------------------------------|
+| `texture`         | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/)       | `sync:textures/entity/minion_template.png` | Texture for the minion                          |
+| `follow_owner`    | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)             |                                            | Whether the minion follows its owner            |
+| `follow_offset`   | [Vector](https://origins.readthedocs.io/en/latest/types/data_types/vector/)               | *optional*                                 | Offset position when following                  |
+| `scale`           | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                 | `1.0`                                      | Size multiplier for the minion                  |
+| `invulnerable`    | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)             | `false`                                    | Whether the minion can take damage              |
+| `max_life_ticks`  | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/)             | `1200`                                     | Lifespan in ticks (20 ticks = 1 second)         |
+| `bientity_action` | [Bi-Entity Action](https://origins.readthedocs.io/en/latest/types/bientity_action_types/) | *optional*                                 | Action to execute on the minion after summoning |
 
 ### Minion Behavior
 

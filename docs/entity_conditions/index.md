@@ -9,14 +9,14 @@ Sync adds several entity conditions that provide new ways to check entity states
 
 ## Available Entity Conditions
 
-| Condition | Description |
-|-----------|-------------|
-| [Entity In Radius](./entity_in_radius.md) | Counts entities within a radius with conditions |
-| [Entity Set Size](./entity_set_size.md) | Compares the size of an entity set |
-| [Has Command Tag](./has_command_tag.md) | Checks if an entity has specific command tags |
-| [In Pose](./in_pose.md) | Checks if an entity is in a specific pose |
-| [Key Pressed](./key_pressed.md) | Checks if a player is pressing a specific key |
-| [Player Model Type](./player_model_type.md) | Checks if a player uses "wide" or "slim" model |
+| Condition                                   | Description                                     |
+|---------------------------------------------|-------------------------------------------------|
+| [Entity In Radius](./entity_in_radius.md)   | Counts entities within a radius with conditions |
+| [Entity Set Size](./entity_set_size.md)     | Compares the size of an entity set              |
+| [Has Command Tag](./has_command_tag.md)     | Checks if an entity has specific command tags   |
+| [In Pose](./in_pose.md)                     | Checks if an entity is in a specific pose       |
+| [Key Pressed](./key_pressed.md)             | Checks if a player is pressing a specific key   |
+| [Player Model Type](./player_model_type.md) | Checks if a player uses "wide" or "slim" model  |
 
 ## Using Sync Entity Conditions
 

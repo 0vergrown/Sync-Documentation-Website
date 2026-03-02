@@ -13,10 +13,10 @@ Type ID: `sync:emissive`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`light` | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) | | The static light level emitted by the entity (0-15). This is the base brightness.
-`dynamic_light` | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) | `0` | Optional dynamic light level for special effects (0-15). This is used with the LambDynamicLights mod for moving light sources.
+| Field           | Type                                                                          | Default | Description                                                                                                                    |
+|-----------------|-------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------|
+| `light`         | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) |         | The static light level emitted by the entity (0-15). This is the base brightness.                                              |
+| `dynamic_light` | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) | `0`     | Optional dynamic light level for special effects (0-15). This is used with the LambDynamicLights mod for moving light sources. |
 
 ### How It Works
 

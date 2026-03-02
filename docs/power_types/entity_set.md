@@ -13,11 +13,11 @@ Type ID: `sync:entity_set`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`action_on_add` | [Bi-Entity Action](https://origins.readthedocs.io/en/latest/types/bientity_action_types/) | *optional* | Action executed when an entity is added to the set.
-`action_on_remove` | [Bi-Entity Action](https://origins.readthedocs.io/en/latest/types/bientity_action_types/) | *optional* | Action executed when an entity is removed from the set.
-`tick_rate` | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) | `1` | How often (in ticks) the set checks for temporary entity expiration.
+| Field              | Type                                                                                      | Default    | Description                                                          |
+|--------------------|-------------------------------------------------------------------------------------------|------------|----------------------------------------------------------------------|
+| `action_on_add`    | [Bi-Entity Action](https://origins.readthedocs.io/en/latest/types/bientity_action_types/) | *optional* | Action executed when an entity is added to the set.                  |
+| `action_on_remove` | [Bi-Entity Action](https://origins.readthedocs.io/en/latest/types/bientity_action_types/) | *optional* | Action executed when an entity is removed from the set.              |
+| `tick_rate`        | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/)             | `1`        | How often (in ticks) the set checks for temporary entity expiration. |
 
 ### Notes
 

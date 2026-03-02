@@ -13,10 +13,10 @@ Type ID: `sync:radial_menu`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`entries` | [Array](https://origins.readthedocs.io/en/latest/types/data_types/array/) of [Radial Menu Entries](../data_types/radial_menu_entry.md) | | List of menu entries to display
-`sprite_location` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) | *optional* | Custom texture for the radial menu background (256x256 pixels)
+| Field             | Type                                                                                                                                   | Default    | Description                                                    |
+|-------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------|----------------------------------------------------------------|
+| `entries`         | [Array](https://origins.readthedocs.io/en/latest/types/data_types/array/) of [Radial Menu Entries](../data_types/radial_menu_entry.md) |            | List of menu entries to display                                |
+| `sprite_location` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/)                                                    | *optional* | Custom texture for the radial menu background (256x256 pixels) |
 
 ### How It Works
 

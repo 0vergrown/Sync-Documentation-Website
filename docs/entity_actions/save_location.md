@@ -13,10 +13,10 @@ Type ID: `sync:save_location`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`id` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | | Unique identifier for this saved location
-`overwrite` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `true` | Whether to overwrite an existing location with the same ID
+| Field       | Type                                                                          | Default | Description                                                |
+|-------------|-------------------------------------------------------------------------------|---------|------------------------------------------------------------|
+| `id`        | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/)   |         | Unique identifier for this saved location                  |
+| `overwrite` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `true`  | Whether to overwrite an existing location with the same ID |
 
 ### How It Works
 

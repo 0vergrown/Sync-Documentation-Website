@@ -13,11 +13,11 @@ Type ID: `sync:mobs_ignore`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`mob_condition` | [Entity Condition](https://origins.readthedocs.io/en/latest/types/entity_condition_types/) | *optional* | Condition that mobs must meet to ignore the entity.
-`bientity_condition` | [Bi-Entity Condition](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/) | *optional* | Condition that must be met between mob and entity.
-`provokable` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `true` | Whether mobs can be provoked to attack if damaged.
+| Field                | Type                                                                                            | Default    | Description                                         |
+|----------------------|-------------------------------------------------------------------------------------------------|------------|-----------------------------------------------------|
+| `mob_condition`      | [Entity Condition](https://origins.readthedocs.io/en/latest/types/entity_condition_types/)      | *optional* | Condition that mobs must meet to ignore the entity. |
+| `bientity_condition` | [Bi-Entity Condition](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/) | *optional* | Condition that must be met between mob and entity.  |
+| `provokable`         | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)                   | `true`     | Whether mobs can be provoked to attack if damaged.  |
 
 ### Notes
 

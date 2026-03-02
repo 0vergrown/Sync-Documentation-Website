@@ -13,11 +13,11 @@ Type ID: `sync:action_on_death`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`bientity_action` | [Bi-Entity Action](https://origins.readthedocs.io/en/latest/types/bientity_action_types/) | | The action to execute when the entity dies. Receives a pair: (killer, victim).
-`bientity_condition` | [Bi-Entity Condition](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/) | *optional* | Condition that must be met between killer and victim.
-`damage_condition` | [Damage Condition](https://origins.readthedocs.io/en/latest/types/damage_condition_types/) | *optional* | Condition that must be met by the damage source and amount.
+| Field                | Type                                                                                            | Default    | Description                                                                    |
+|----------------------|-------------------------------------------------------------------------------------------------|------------|--------------------------------------------------------------------------------|
+| `bientity_action`    | [Bi-Entity Action](https://origins.readthedocs.io/en/latest/types/bientity_action_types/)       |            | The action to execute when the entity dies. Receives a pair: (killer, victim). |
+| `bientity_condition` | [Bi-Entity Condition](https://origins.readthedocs.io/en/latest/types/bientity_condition_types/) | *optional* | Condition that must be met between killer and victim.                          |
+| `damage_condition`   | [Damage Condition](https://origins.readthedocs.io/en/latest/types/damage_condition_types/)      | *optional* | Condition that must be met by the damage source and amount.                    |
 
 ### Notes
 

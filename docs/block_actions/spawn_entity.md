@@ -11,11 +11,11 @@ Type ID: `sync:spawn_entity`
 
 ### Fields
 
-Field | Type | Default    | Description
-------|------|------------|-------------
-`entity_type` | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/) |            | Type of entity to spawn
-`tag` | [NBT](https://origins.readthedocs.io/en/latest/types/data_types/nbt/) | *optional* | NBT data for the entity
-`entity_action` | [Entity Action](https://origins.readthedocs.io/en/latest/types/entity_action_types/) | *optional*     | Action to execute on the spawned entity
+| Field           | Type                                                                                 | Default    | Description                             |
+|-----------------|--------------------------------------------------------------------------------------|------------|-----------------------------------------|
+| `entity_type`   | [Identifier](https://origins.readthedocs.io/en/latest/types/data_types/identifier/)  |            | Type of entity to spawn                 |
+| `tag`           | [NBT](https://origins.readthedocs.io/en/latest/types/data_types/nbt/)                | *optional* | NBT data for the entity                 |
+| `entity_action` | [Entity Action](https://origins.readthedocs.io/en/latest/types/entity_action_types/) | *optional* | Action to execute on the spawned entity |
 
 ### Notes
 

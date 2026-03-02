@@ -13,9 +13,9 @@ Type ID: `sync:remove_from_entity_set`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`set` | [Power Type](https://origins.readthedocs.io/en/latest/types/power_types/) | | The Entity Set power to remove the target from.
+| Field | Type                                                                      | Default | Description                                     |
+|-------|---------------------------------------------------------------------------|---------|-------------------------------------------------|
+| `set` | [Power Type](https://origins.readthedocs.io/en/latest/types/power_types/) |         | The Entity Set power to remove the target from. |
 
 ### Notes
 

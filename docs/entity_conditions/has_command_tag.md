@@ -11,10 +11,10 @@ Type ID: `sync:has_command_tag`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`command_tag` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | *optional* | Single tag to check for
-`command_tags` | [Array](https://origins.readthedocs.io/en/latest/types/data_types/array/) of [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | *optional* | Multiple tags that must all be present
+| Field          | Type                                                                                                                                                     | Default    | Description                            |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------------|----------------------------------------|
+| `command_tag`  | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/)                                                                              | *optional* | Single tag to check for                |
+| `command_tags` | [Array](https://origins.readthedocs.io/en/latest/types/data_types/array/) of [String](https://origins.readthedocs.io/en/latest/types/data_types/string/) | *optional* | Multiple tags that must all be present |
 
 ### Notes
 

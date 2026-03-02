@@ -13,9 +13,9 @@ Type ID: `sync:set_no_gravity`
 
 ### Fields
 
-Field   | Type                                                                                                | Default  | Description
---------|-----------------------------------------------------------------------------------------------------|----------|-------------
-`value` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)                       | *optional* | If present, sets the entity’s no‑gravity flag to this value. If omitted, toggles the current value.
+| Field   | Type                                                                          | Default    | Description                                                                                         |
+|---------|-------------------------------------------------------------------------------|------------|-----------------------------------------------------------------------------------------------------|
+| `value` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | *optional* | If present, sets the entity’s no‑gravity flag to this value. If omitted, toggles the current value. |
 
 ### How It Works
 

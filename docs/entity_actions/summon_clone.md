@@ -13,14 +13,14 @@ Type ID: `sync:summon_clone`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`can_sit` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `true` | Whether the clone can sit when interacted with
-`can_attack` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `true` | Whether the clone can attack hostile mobs
-`follow_owner` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `true` | Whether the clone follows its owner
-`inherit_equipment` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `true` | Whether the clone copies the player's equipment
-`inherit_enchantments` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/) | `true` | Whether to copy enchantments from equipment
-`bientity_action` | [Bi-Entity Action](https://origins.readthedocs.io/en/latest/types/bientity_action_types/) | *optional* | Action to execute on the clone after summoning
+| Field                  | Type                                                                                      | Default    | Description                                     |
+|------------------------|-------------------------------------------------------------------------------------------|------------|-------------------------------------------------|
+| `can_sit`              | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)             | `true`     | Whether the clone can sit when interacted with  |
+| `can_attack`           | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)             | `true`     | Whether the clone can attack hostile mobs       |
+| `follow_owner`         | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)             | `true`     | Whether the clone follows its owner             |
+| `inherit_equipment`    | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)             | `true`     | Whether the clone copies the player's equipment |
+| `inherit_enchantments` | [Boolean](https://origins.readthedocs.io/en/latest/types/data_types/boolean/)             | `true`     | Whether to copy enchantments from equipment     |
+| `bientity_action`      | [Bi-Entity Action](https://origins.readthedocs.io/en/latest/types/bientity_action_types/) | *optional* | Action to execute on the clone after summoning  |
 
 ### Clone Behavior
 

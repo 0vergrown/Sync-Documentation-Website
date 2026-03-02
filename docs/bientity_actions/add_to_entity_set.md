@@ -13,10 +13,10 @@ Type ID: `sync:add_to_entity_set`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`set` | [Power Type](https://origins.readthedocs.io/en/latest/types/power_types/) | | The Entity Set power to add the target to.
-`time_limit` | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) | *optional* | Duration (in ticks) the entity should remain in the set. After this time, the entity is automatically removed.
+| Field        | Type                                                                          | Default    | Description                                                                                                    |
+|--------------|-------------------------------------------------------------------------------|------------|----------------------------------------------------------------------------------------------------------------|
+| `set`        | [Power Type](https://origins.readthedocs.io/en/latest/types/power_types/)     |            | The Entity Set power to add the target to.                                                                     |
+| `time_limit` | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) | *optional* | Duration (in ticks) the entity should remain in the set. After this time, the entity is automatically removed. |
 
 ### Notes
 

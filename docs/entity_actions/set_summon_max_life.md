@@ -13,9 +13,9 @@ Type ID: `sync:set_summon_max_life_ticks`
 
 ### Fields
 
-Field | Type | Default | Description
-------|------|---------|-------------
-`amount` | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) | | New maximum lifetime in ticks (20 ticks = 1 second)
+| Field    | Type                                                                          | Default | Description                                         |
+|----------|-------------------------------------------------------------------------------|---------|-----------------------------------------------------|
+| `amount` | [Integer](https://origins.readthedocs.io/en/latest/types/data_types/integer/) |         | New maximum lifetime in ticks (20 ticks = 1 second) |
 
 ### Notes
 
