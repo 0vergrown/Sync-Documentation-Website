@@ -1,20 +1,21 @@
 ---
 title: Bientity Action Types
-date: 2024-01-07
+date: 2026-03-01
 ---
 
 # Bientity Action Types
 
-Sync adds specialized bientity action types that work with its Entity Set power system. These actions allow you to manage collections of entities with specific behaviors.
+Sync adds specialized bientity action types that work with its Entity Set power system, disguise system, command execution, and entity conversion.
 
 ## Available Bientity Action Types
 
-| Action Type                                           | Description                               |
-|-------------------------------------------------------|-------------------------------------------|
-| [Add to Entity Set](./add_to_entity_set.md)           | Adds an entity to an Entity Set           |
-| [Disguise](./disguise.md)                             | Makes the actor appear as the target      |
-| [Execute Command](./execute_command.md)               | Executes a command with UUID placeholders |
-| [Remove from Entity Set](./remove_from_entity_set.md) | Removes an entity from an Entity Set      |
+| Action Type                                           | Description                                  |
+|-------------------------------------------------------|----------------------------------------------|
+| [Add to Entity Set](./add_to_entity_set.md)           | Adds an entity to an Entity Set              |
+| [Convert Entity](./convert_entity.md)                 | Converts the target entity into another type |
+| [Disguise](./disguise.md)                             | Makes the actor appear as the target         |
+| [Execute Command](./execute_command.md)               | Executes a command with UUID placeholders    |
+| [Remove from Entity Set](./remove_from_entity_set.md) | Removes an entity from an Entity Set         |
 
 ## How Bientity Actions Work
 
