@@ -7,7 +7,7 @@ date: 2024-12-20
 
 [Data Type](https://origins.readthedocs.io/en/latest/types/data_types/)
 
-A data type representing a keybind that can be pressed to trigger an action, optionally with continuous detection. Used by the [`keys`](#) field of the [`sync:action_on_key_sequence`](../power_types/action_on_key_sequence.md) power type.
+A data type representing a keybind that can be pressed to trigger an action, optionally with continuous detection. Used by the [`keys`](#) field of the [Action On Key Sequence (Power Type)](../power_types/action_on_key_sequence.md).
 
 ### Fields
 
