@@ -5,6 +5,8 @@ date: 2024-01-07
 
 # Has Command Tag
 
+[Entity Condition Types](https://origins.readthedocs.io/en/latest/types/entity_condition_types/)
+
 Checks if an entity has specific command tags. Command tags are metadata that can be added to entities using the `/tag` command.
 
 Type ID: `sync:has_command_tag`

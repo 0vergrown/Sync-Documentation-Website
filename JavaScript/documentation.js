@@ -34,7 +34,9 @@ document.addEventListener("DOMContentLoaded", async function() {
         'block_actions': 'fas fa-cube',
         'item_actions': 'fa-solid fa-list',
         'item_conditions': 'fa-solid fa-table-list',
-        'data_types': 'fas fa-book'
+        'data_types': 'fas fa-book',
+        'meta_actions': 'fa-solid fa-circle-nodes',
+        'mod_compat': 'fa-solid fa-code-commit'
     };
 
     // Helper functions

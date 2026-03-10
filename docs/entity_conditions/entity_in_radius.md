@@ -5,6 +5,8 @@ date: 2024-01-07
 
 # Entity In Radius
 
+[Entity Condition Types](https://origins.readthedocs.io/en/latest/types/entity_condition_types/)
+
 Counts entities within a specified radius and compares the count against a value. Can filter entities with bi-entity conditions.
 
 Type ID: `sync:entity_in_radius`

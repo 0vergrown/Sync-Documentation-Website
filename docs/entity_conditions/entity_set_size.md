@@ -5,6 +5,8 @@ date: 2024-01-07
 
 # Entity Set Size
 
+[Entity Condition Types](https://origins.readthedocs.io/en/latest/types/entity_condition_types/)
+
 Compares the number of entities in an [Entity Set power](../power_types/entity_set.md) against a value.
 
 Type ID: `sync:entity_set_size`

@@ -5,6 +5,8 @@ date: 2024-01-07
 
 # Key Pressed
 
+[Entity Condition Types](https://origins.readthedocs.io/en/latest/types/entity_condition_types/)
+
 Checks if a player is pressing a specific key. Tracks both continuous holding and individual key presses.
 
 Type ID: `sync:key_pressed`

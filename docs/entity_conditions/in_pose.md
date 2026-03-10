@@ -5,6 +5,8 @@ date: 2024-01-07
 
 # In Pose
 
+[Entity Condition Types](https://origins.readthedocs.io/en/latest/types/entity_condition_types/)
+
 Checks if an entity is in a specific pose. Poses include standing, crouching, swimming, sleeping, etc.
 
 Type ID: `sync:in_pose`

@@ -29,10 +29,12 @@
     "index.md",
     "action_on_entity_set.md",
     "custom_projectile.md",
+    "cycle_stolen_power.md",
     "grant_all_powers.md",
     "print.md",
     "radial_menu.md",
     "random_teleport.md",
+    "raycast.md",
     "remove_disguise.md",
     "revoke_all_powers.md",
     "revoke_power.md",
@@ -42,7 +44,9 @@
     "summon_clone.md",
     "summon_minion.md",
     "teleport_to_location.md",
-    "teleport_to_spawn.md"
+    "teleport_to_spawn.md",
+    "toggle_transfer_mode.md",
+    "use_selected_stolen_power.md"
   ],
   "bientity_actions": [
     "index.md",
@@ -58,11 +62,15 @@
     "entity_set_size.md",
     "has_command_tag.md",
     "in_pose.md",
+    "is_selected_stolen_power.md",
     "key_pressed.md",
-    "player_model_type.md"
+    "perspective.md",
+    "player_model_type.md",
+    "raycast.md"
   ],
   "bientity_conditions": [
     "index.md",
+    "colliding.md",
     "command.md",
     "disguised.md",
     "in_entity_set.md"
@@ -87,5 +95,13 @@
     "functional_key.md",
     "model_part_transformations.md",
     "radial_menu_entry.md"
+  ],
+  "meta_actions": [
+    "index.md",
+    "loop.md"
+  ],
+  "mod_compat": [
+    "index.md",
+    "modify_jade_tooltip.md"
   ]
 }
