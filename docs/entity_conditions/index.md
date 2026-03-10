@@ -21,6 +21,7 @@ Sync adds several entity conditions that provide new ways to check entity states
 | [Perspective](./perspective.md)                           | Checks which camera perspective a player is currently using        |
 | [Player Model Type](./player_model_type.md)               | Checks if a player uses "wide" or "slim" model                     |
 | [Raycast](./raycast.md)                                   | Checks if a ray from the entity hits something matching conditions |
+| [Velocity](./velocity.md)                                 | Checks an entity's current velocity                                |
 
 
 ## Using Sync Entity Conditions

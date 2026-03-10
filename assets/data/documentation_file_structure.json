@@ -30,6 +30,7 @@
     "action_on_entity_set.md",
     "custom_projectile.md",
     "cycle_stolen_power.md",
+    "disguise_as.md",
     "grant_all_powers.md",
     "print.md",
     "radial_menu.md",
@@ -66,7 +67,8 @@
     "key_pressed.md",
     "perspective.md",
     "player_model_type.md",
-    "raycast.md"
+    "raycast.md",
+    "velocity.md"
   ],
   "bientity_conditions": [
     "index.md",
