@@ -53,9 +53,13 @@
   "bientity_actions": [
     "index.md",
     "add_to_entity_set.md",
+    "convert_entity.md",
     "disguise.md",
     "execute_command.md",
-    "remove_from_entity_set.md"
+    "liberate_power.md",
+    "remove_from_entity_set.md",
+    "suppress_power.md",
+    "transfer.md"
   ],
   "entity_conditions": [
     "index.md",
