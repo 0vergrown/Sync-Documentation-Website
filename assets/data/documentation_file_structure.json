@@ -101,8 +101,10 @@
   ],
   "data_types": [
     "index.md",
+    "body_part_modifier_entry.md",
     "data_driven_keybinds.md",
     "functional_key.md",
+    "message_consumer.md",
     "model_part_transformations.md",
     "radial_menu_entry.md"
   ],
