@@ -8,6 +8,8 @@
     "index.md",
     "action_on_death.md",
     "action_on_key_sequence.md",
+    "action_on_sending_message.md",
+    "body_part_damage_modifier.md",
     "custom_projectile.md",
     "edible_item.md",
     "emissive.md",
