@@ -31,6 +31,7 @@ Sync adds several unique power types that enhance entity behavior and visual eff
 | [Pose](./pose.md)                                                       | Forces entities into specific poses                                       |
 | [Prevent Creative Flight](./prevent_creative_flight.md)                 | Prevents a player from using creative (ability) flight                    |
 | [Prevent Sprinting Particles](./prevent_sprinting_particles.md)         | Prevents sprinting particle effects                                       |
+| [Prevent Teleport](./prevent_teleport.md)                               | Prevents the holder from being teleported by any means                    |
 | [Sprinting](./sprinting.md)                                             | Forces entities to sprint automatically                                   |
 
 ## Using Sync Power Types

@@ -18,12 +18,12 @@ This data type is an [Array](https://origins.readthedocs.io/en/latest/types/data
 | Field       | Type                                                                                                                                                                             | Default    | Description                                                                                                                                                      |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `body_part` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/)                                                                                                      | *optional* | A named preset defining the body region. See [Named Presets](#named-presets) below. If omitted, the region is defined by the explicit coordinate fields instead. |
-| `x_min`     | [Double](https://origins.readthedocs.io/en/latest/types/data_types/double/)                                                                                                      | `-1.0`     | Minimum X bound of the region (entity's right side = −1). Ignored when `body_part` is set.                                                                       |
-| `x_max`     | [Double](https://origins.readthedocs.io/en/latest/types/data_types/double/)                                                                                                      | `1.0`      | Maximum X bound of the region (entity's left side = +1). Ignored when `body_part` is set.                                                                        |
-| `y_min`     | [Double](https://origins.readthedocs.io/en/latest/types/data_types/double/)                                                                                                      | `0.0`      | Minimum Y bound of the region (feet = 0). Ignored when `body_part` is set.                                                                                       |
-| `y_max`     | [Double](https://origins.readthedocs.io/en/latest/types/data_types/double/)                                                                                                      | `1.0`      | Maximum Y bound of the region (top of head = 1). Ignored when `body_part` is set.                                                                                |
-| `z_min`     | [Double](https://origins.readthedocs.io/en/latest/types/data_types/double/)                                                                                                      | `-1.0`     | Minimum Z bound of the region (front of entity = −1). Ignored when `body_part` is set.                                                                           |
-| `z_max`     | [Double](https://origins.readthedocs.io/en/latest/types/data_types/double/)                                                                                                      | `1.0`      | Maximum Z bound of the region (back of entity = +1). Ignored when `body_part` is set.                                                                            |
+| `x_min`     | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `-1.0`     | Minimum X bound of the region (entity's right side = −1). Ignored when `body_part` is set.                                                                       |
+| `x_max`     | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `1.0`      | Maximum X bound of the region (entity's left side = +1). Ignored when `body_part` is set.                                                                        |
+| `y_min`     | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `0.0`      | Minimum Y bound of the region (feet = 0). Ignored when `body_part` is set.                                                                                       |
+| `y_max`     | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `1.0`      | Maximum Y bound of the region (top of head = 1). Ignored when `body_part` is set.                                                                                |
+| `z_min`     | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `-1.0`     | Minimum Z bound of the region (front of entity = −1). Ignored when `body_part` is set.                                                                           |
+| `z_max`     | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `1.0`      | Maximum Z bound of the region (back of entity = +1). Ignored when `body_part` is set.                                                                            |
 | `modifier`  | [Modifier](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier_operation/)                                                                              | *optional* | A single modifier to apply when the hit falls within this region.                                                                                                |
 | `modifiers` | [Array](https://origins.readthedocs.io/en/latest/types/data_types/array/) of [Modifier](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier_operation/) | *optional* | Multiple modifiers to apply when the hit falls within this region. Applied in order. Can be used together with `modifier`.                                       |
 
@@ -32,7 +32,7 @@ At least one of `modifier` or `modifiers` must be provided. Both can be specifie
 ---
 
 ### Named Presets
-The `body_part` field accepts the following values. All axes use the [hit-space coordinate system](../power_types/body_part_damage_modifier.md#hit-space-coordinate-system) described in the power type documentation.
+The `body_part` field accepts the following values. All axes use the hit-space coordinate system.
 
 | Value           | yNorm        | xNorm          | zNorm       | Description                            |
 |-----------------|--------------|----------------|-------------|----------------------------------------|
@@ -46,20 +46,6 @@ The `body_part` field accepts the following values. All axes use the [hit-space 
 | `legs`          | 0.18 – 0.50  | −1.0 – 1.0     | −1.0 – 1.0  | Both legs combined                     |
 | `feet`          | 0.0 – 0.18   | −1.0 – 1.0     | −1.0 – 1.0  | Both feet combined                     |
 | `achilles_heel` | 0.0 – 0.12   | −0.35 – 0.35   | 0.30 – 1.0  | Back of the lower foot                 |
-
----
-
-### Modifier Operations
-
-The `modifier` and `modifiers` fields follow the standard Apoli modifier format. Commonly used operations:
-
-| Operation                       | Effect                                                                  |
-|---------------------------------|-------------------------------------------------------------------------|
-| `add_base_early`                | Adds a flat value to the damage before other operations                 |
-| `multiply_base_additive`        | Multiplies the base damage additively (stacks with other additive mods) |
-| `multiply_total_multiplicative` | Multiplies the total damage multiplicatively                            |
-
-Positive values increase damage; negative values reduce it. For example, `"value": 0.5` with `multiply_total_multiplicative` adds 50% more damage, while `"value": -0.2` reduces damage by 20%.
 
 ---
 
@@ -159,4 +145,4 @@ Three separate entries: head hits deal 50% extra, back hits deal 30% extra, and 
 - If both `body_part` and explicit coordinate fields (`x_min`, `x_max`, etc.) are present, `body_part` takes priority and the coordinate fields are ignored.
 - Multiple entries in the array are evaluated independently. A single hit can match more than one entry, and all matching modifiers are applied in sequence.
 - At least one of `modifier` or `modifiers` must be specified; an entry with neither is invalid.
-- The Z axis (front/back) is only meaningful for projectile hits and player melee hits where real positional data is available. For fallback hits (mob attacks), `zNorm` is always `0.0` (center), so entries that require a non-zero Z range will not match.
+- The Z axis (front/back) is only meaningful for projectile hits and player mêlée hits where real positional data is available. For fallback hits (mob attacks), `zNorm` is always `0.0` (center), so entries that require a non-zero Z range will not match.

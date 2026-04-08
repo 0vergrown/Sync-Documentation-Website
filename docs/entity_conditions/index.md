@@ -11,6 +11,7 @@ Sync adds several entity conditions that provide new ways to check entity states
 
 | Condition                                                 | Description                                                        |
 |-----------------------------------------------------------|--------------------------------------------------------------------|
+| [Attached to Rope](./attached_to_rope.md)                 | Checks if the player is currently attached to a rope               |
 | [Disguised](./disguised.md)                               | Checks if the entity currently has an active disguise              |
 | [Entity In Radius](./entity_in_radius.md)                 | Counts entities within a radius with conditions                    |
 | [Entity Set Size](./entity_set_size.md)                   | Compares the size of an entity set                                 |
