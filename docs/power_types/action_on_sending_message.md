@@ -7,7 +7,7 @@ date: 2026-03-01
 
 [Power Types](https://origins.readthedocs.io/en/latest/types/power_types/)
 
-Allows the player to intercept messages they send (chat, commands like `/me`, etc.) and optionally cancel them or execute actions based on regex matching. Multiple filters can be defined, each with its own actions. The power respects priority ordering.
+Allows the player to intercept messages they send (chat, commands like `/me`, etc.) and optionally cancel them or execute actions based on regex matching.
 
 Type ID: `sync:action_on_sending_message`
 
@@ -43,7 +43,6 @@ Type ID: `sync:action_on_sending_message`
 
 ### Examples
 
-**Stops swearing with two filters:**
 ```json
 {
   "type": "sync:action_on_sending_message",
@@ -65,4 +64,4 @@ Type ID: `sync:action_on_sending_message`
   ]
 }
 ```
-The first filter matches profanity, damages the player and cancels the message. The second filter matches everything (due to `.*`), but because it's after the first, it only runs its `after_action` when no earlier filter matched – i.e., when the message is clean, it announces that the player said something clean. The message still goes through.
+Stops swearing with two filters. The first filter matches profanity, damages the player and cancels the message. The second filter matches everything (due to `.*`), but because it's after the first, it only runs its `after_action` when no earlier filter matched (i.e., when the message is clean, it announces that the player said something clean). The message still goes through.
