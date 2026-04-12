@@ -42,12 +42,14 @@ A simple filter that blocks profanity and damages the player and damages them.
 
 ```json
 {
-  "filter": "#{item.minecraft.fire_charge}",
-  "before_action": {
-    "type": "apoli:execute_command",
-    "command": "say Fireball!"
-  },
-  "prevent": true
+  "filter":{
+    "filter":"^#{item.minecraft.fire_charge}$",
+    "before_action":{
+      "type":"apoli:execute_command",
+      "command":"say Fireball!"
+    },
+    "prevent":true
+  }
 }
 ```
 A filter that matches "Fire Charge" in any language and triggers a fireball action, blocking the message.
