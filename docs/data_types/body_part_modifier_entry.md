@@ -15,19 +15,20 @@ This data type is an [Array](https://origins.readthedocs.io/en/latest/types/data
 
 ### Fields
 
-| Field       | Type                                                                                                                                                                             | Default    | Description                                                                                                                                                      |
-|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `body_part` | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/)                                                                                                      | *optional* | A named preset defining the body region. See [Named Presets](#named-presets) below. If omitted, the region is defined by the explicit coordinate fields instead. |
-| `x_min`     | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `-1.0`     | Minimum X bound of the region (entity's right side = −1). Ignored when `body_part` is set.                                                                       |
-| `x_max`     | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `1.0`      | Maximum X bound of the region (entity's left side = +1). Ignored when `body_part` is set.                                                                        |
-| `y_min`     | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `0.0`      | Minimum Y bound of the region (feet = 0). Ignored when `body_part` is set.                                                                                       |
-| `y_max`     | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `1.0`      | Maximum Y bound of the region (top of head = 1). Ignored when `body_part` is set.                                                                                |
-| `z_min`     | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `-1.0`     | Minimum Z bound of the region (front of entity = −1). Ignored when `body_part` is set.                                                                           |
-| `z_max`     | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `1.0`      | Maximum Z bound of the region (back of entity = +1). Ignored when `body_part` is set.                                                                            |
-| `modifier`  | [Modifier](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier_operation/)                                                                              | *optional* | A single modifier to apply when the hit falls within this region.                                                                                                |
-| `modifiers` | [Array](https://origins.readthedocs.io/en/latest/types/data_types/array/) of [Modifier](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier_operation/) | *optional* | Multiple modifiers to apply when the hit falls within this region. Applied in order. Can be used together with `modifier`.                                       |
+| Field             | Type                                                                                                                                                                             | Default    | Description                                                                                                                                                         |
+|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `body_part`       | [String](https://origins.readthedocs.io/en/latest/types/data_types/string/)                                                                                                      | *optional* | A named preset defining the body region. See [Named Presets](#named-presets) below. If omitted, the region is defined by the explicit coordinate fields instead.    |
+| `x_min`           | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `-1.0`     | Minimum X bound of the region (entity's right side = −1). Ignored when `body_part` is set.                                                                          |
+| `x_max`           | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `1.0`      | Maximum X bound of the region (entity's left side = +1). Ignored when `body_part` is set.                                                                           |
+| `y_min`           | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `0.0`      | Minimum Y bound of the region (feet = 0). Ignored when `body_part` is set.                                                                                          |
+| `y_max`           | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `1.0`      | Maximum Y bound of the region (top of head = 1). Ignored when `body_part` is set.                                                                                   |
+| `z_min`           | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `-1.0`     | Minimum Z bound of the region (front of entity = −1). Ignored when `body_part` is set.                                                                              |
+| `z_max`           | [Float](https://origins.readthedocs.io/en/latest/types/data_types/float/)                                                                                                        | `1.0`      | Maximum Z bound of the region (back of entity = +1). Ignored when `body_part` is set.                                                                               |
+| `modifier`        | [Modifier](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier_operation/)                                                                              | *optional* | A single modifier to apply when the hit falls within this region.                                                                                                   |
+| `modifiers`       | [Array](https://origins.readthedocs.io/en/latest/types/data_types/array/) of [Modifier](https://origins.readthedocs.io/en/latest/types/data_types/attribute_modifier_operation/) | *optional* | Multiple modifiers to apply when the hit falls within this region. Applied in order. Can be used together with `modifier`.                                          |
+| `bientity_action` | [Bi-entity Action](https://origins.readthedocs.io/en/latest/types/bi_entity_action_types/)                                                                                       | *optional* | If set, this action is executed when this body region is hit. The **actor** (first entity) is the attacker; the **target** (second entity) is the entity being hit. |
 
-At least one of `modifier` or `modifiers` must be provided. Both can be specified at once and will be combined.
+At least one of `modifier` or `modifiers` must be provided. Both can be specified at once and will be combined. The `bientity_action` is entirely optional and independent of the modifiers.
 
 ---
 
@@ -105,6 +106,21 @@ Defines a custom narrow zone at the lower back and applies a 75% damage bonus to
 }
 ```
 Reduces all incoming damage by 1 regardless of where the hit lands. Useful as a base reduction combined with region-specific bonuses.
+
+```json
+{
+   "body_part":"head",
+   "modifier":{
+      "operation":"multiply_total_multiplicative",
+      "value":1.5
+   },
+   "bientity_action":{
+      "type":"apoli:add_velocity",
+      "z":-2.0
+   }
+}
+```
+When the head is hit, damage is multiplied by 1.5 AND the attacker is knocked back 2 blocks.
 
 ```json
 [
