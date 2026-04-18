@@ -11,6 +11,7 @@ Sync adds item actions that can be used in data packs to interact with the entit
 
 | Action                              | Description                                                                |
 |-------------------------------------|----------------------------------------------------------------------------|
+| [Cooldown](./cooldown.md)           | Sets a cooldown on the item, preventing it from being used temporarily.    |
 | [Holder Action](./holder_action.md) | Executes an entity action on the entity currently holding this item stack. |
 
 ## Using Sync Item Actions
