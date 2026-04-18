@@ -19,6 +19,7 @@ Sync adds several entity actions that can be used in data packs to create custom
 | [Cycle Stolen Power](./cycle_stolen_power.md)               | Cycles through the entity's stolen power packages            |
 | [Disguise As](./disguise_as.md)                             | Visually disguises a living entity as another entity type    |
 | [Grant All Powers](./grant_all_powers.md)                   | Grants all powers from a specific source                     |
+| [Item Cooldown](./item_cooldown.md)                         | Sets cooldowns on items in a player's inventory              |
 | [Print](./print.md)                                         | Logs messages to console or player chat                      |
 | [Random Teleport](./random_teleport.md)                     | Teleports entities randomly within an area                   |
 | [Raycast](./raycast.md)                                     | Fires a ray and executes actions based on what it hits       |
