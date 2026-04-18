@@ -39,6 +39,7 @@
     "cycle_stolen_power.md",
     "disguise_as.md",
     "grant_all_powers.md",
+    "item_cooldown.md",
     "print.md",
     "radial_menu.md",
     "random_teleport.md",
@@ -97,12 +98,14 @@
   ],
   "item_actions": [
     "index.md",
+    "cooldown.md",
     "holder_action.md"
   ],
   "item_conditions": [
     "index.md",
     "fuel.md",
-    "holder_condition.md"
+    "holder_condition.md",
+    "on_cooldown.md"
   ],
   "data_types": [
     "index.md",
