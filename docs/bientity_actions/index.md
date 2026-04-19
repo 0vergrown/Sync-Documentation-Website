@@ -18,6 +18,7 @@ Sync adds specialized bientity action types that work with its Entity Set power 
 | [Explode](./explode.md)                               | Summons an explosion at either the actor or target location      |
 | [Liberate Power](./liberate_power.md)                 | Lifts suppressions applied by Suppress Power on the target       |
 | [Remove from Entity Set](./remove_from_entity_set.md) | Removes an entity from an Entity Set                             |
+| [Rope Leash](./rope_leash.md)                         | Attaches a physics-simulated rope from the actor to the target   |
 | [Suppress Power](./suppress_power.md)                 | Temporarily disables powers on the target without removing them  |
 | [Transfer](./transfer.md)                             | Steals or returns power packages between actor and target        |
 
