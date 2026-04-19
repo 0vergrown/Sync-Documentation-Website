@@ -33,6 +33,7 @@
     "index.md",
     "action_on_entity_set.md",
     "attach_rope.md",
+    "attach_rope_entity.md",
     "change_selected_slot.md",
     "change_slot.md",
     "custom_projectile.md",
@@ -66,6 +67,7 @@
     "explode.md",
     "liberate_power.md",
     "remove_from_entity_set.md",
+    "rope_leash.md",
     "suppress_power.md",
     "transfer.md"
   ],
