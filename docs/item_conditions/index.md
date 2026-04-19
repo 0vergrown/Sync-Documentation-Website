@@ -11,8 +11,9 @@ Sync adds item conditions that allow you to check properties of the item itself 
 
 | Condition                                 | Description                                                                |
 |-------------------------------------------|----------------------------------------------------------------------------|
-| [Holder Condition](./holder_condition.md) | Checks whether the entity holding this item stack meets a given condition. |
 | [Fuel](./fuel.md)                         | Compares the item’s fuel burn time against a specified value.              |
+| [Holder Condition](./holder_condition.md) | Checks whether the entity holding this item stack meets a given condition. |
+| [Mod Loaded](./mod_loaded.md)             | Checks if one or more Fabric mods are loaded                               |
 
 ## Using Sync Item Conditions
 
