@@ -19,6 +19,7 @@ Sync adds several entity conditions that provide new ways to check entity states
 | [In Pose](./in_pose.md)                                   | Checks if an entity is in a specific pose                          |
 | [Is Selected Stolen Power](./is_selected_stolen_power.md) | Checks if the entity has a stolen power package selected           |
 | [Key Pressed](./key_pressed.md)                           | Checks if a player is pressing a specific key                      |
+| [Mod Loaded](./mod_loaded.md)                             | Checks if one or more Fabric mods are loaded                       |
 | [Perspective](./perspective.md)                           | Checks which camera perspective a player is currently using        |
 | [Player Model Type](./player_model_type.md)               | Checks if a player uses "wide" or "slim" model                     |
 | [Raycast](./raycast.md)                                   | Checks if a ray from the entity hits something matching conditions |
