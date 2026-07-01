@@ -33,7 +33,7 @@ Type ID: `sync:entity_in_radius`
 {
     "type": "sync:entity_in_radius",
     "bientity_condition": {
-        "type": "apoli:actor_condition",
+        "type": "apoli:target_condition",
         "condition": {
             "type": "apoli:entity_type",
             "entity_type": "minecraft:player"
